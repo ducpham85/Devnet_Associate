@@ -21,15 +21,9 @@ for index, row in df.iterrows():
     }
 #6. Connect to device
     CON=ConnectHandler(**device)
-    
-#7.Send command to the router and get information
-    # print(str(index+1)+"." + CON.send_command('show system information | match "System Name"'))
-    # info=CON.send_command('show system information | match "System Name"')
-    # info=info.split(":")
-    # info[1]=info[1].strip()
-    # print(info)
-    info=CON.send_command('show router interface "system" | match system context all')
-    info=info.split("\n")
-    print(info[1])
-#8.Disconnect the session
+#7. Declare commands that are used for sending to the router
+    config_command=["/configure router interface python_test","address 192.168.1."+str(index+1)+"/32","loopback"]
+#8.Send config command to the router
+    print(CON.send_config_set(config_command))
+#9.Disconnect the session
     CON.disconnect()
