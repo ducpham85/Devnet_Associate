@@ -1,0 +1,211 @@
+{
+	"info": {
+		"_postman_id": "4dd0ba4a-f767-4c03-8bf3-3cb500aeaf5d",
+		"name": "RESTCONF",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19976144",
+		"_collection_link": "https://blue-shuttle-12789.postman.co/workspace/DEVNET~db195a76-e612-43b0-a2c0-7526766d2c1f/collection/19976144-4dd0ba4a-f767-4c03-8bf3-3cb500aeaf5d?action=share&creator=19976144&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/yang-data+json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/yang-data+json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://10.215.28.69/restconf",
+					"protocol": "https",
+					"host": [
+						"10",
+						"215",
+						"28",
+						"69"
+					],
+					"path": [
+						"restconf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Interfaces",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/yang-data+json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/yang-data+json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://10.215.28.69/restconf/data/ietf-interfaces:interfaces",
+					"protocol": "https",
+					"host": [
+						"10",
+						"215",
+						"28",
+						"69"
+					],
+					"path": [
+						"restconf",
+						"data",
+						"ietf-interfaces:interfaces"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Interface G1",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/yang-data+json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/yang-data+json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://10.215.28.69/restconf/data/ietf-interfaces:interfaces/interface=GigabitEthernet1",
+					"protocol": "https",
+					"host": [
+						"10",
+						"215",
+						"28",
+						"69"
+					],
+					"path": [
+						"restconf",
+						"data",
+						"ietf-interfaces:interfaces",
+						"interface=GigabitEthernet1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Interface Loopback 100",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/yang-data+json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/yang-data+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"ietf-interfaces:interface\": {\r\n    \"name\": \"Loopback100\",\r\n    \"description\": \"[Student Name]'s Loopback\",\r\n    \"type\": \"iana-if-type:softwareLoopback\",\r\n    \"enabled\": true,\r\n    \"ietf-ip:ipv4\": {\r\n      \"address\": [\r\n        {\r\n          \"ip\": \"10.10.10.10\",\r\n          \"netmask\": \"255.255.255.0\"\r\n        }\r\n      ]\r\n    },\r\n    \"ietf-ip:ipv6\": {}\r\n  }\r\n}\r\n"
+				},
+				"url": {
+					"raw": "https://10.215.28.69/restconf/data/ietf-interfaces:interfaces/interface=Loopback100",
+					"protocol": "https",
+					"host": [
+						"10",
+						"215",
+						"28",
+						"69"
+					],
+					"path": [
+						"restconf",
+						"data",
+						"ietf-interfaces:interfaces",
+						"interface=Loopback100"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
