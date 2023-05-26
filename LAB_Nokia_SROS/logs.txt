@@ -1,0 +1,19 @@
+10.18.8.144" "2023-05-26 09:59:20.990509 Connection Timeout. Please check the hostname, IP, TCP port, firewall, and device availability.10.18.8.143 2023-05-26 10:03:41.650833 SSH Authentication to device failed. Check correct usename/password.10.18.8.143 2023-05-26 10:04:06.624039 SSH Authentication to device failed. Check correct usename/password.10.18.8.143 2023-05-26 10:05:17.755759 SSH Authentication to device failed. Check correct usename/password./n10.18.8.143 2023-05-26 10:07:48.136203 SSH Authentication to device failed. Check correct usename/password.
+10.18.8.143 2023-05-26 10:08:29.936731 SSH Authentication to device failed. Check correct usename/password.
+10.18.8.143 port 9027 2023-05-26 10:10:13.679989 SSH Authentication to device failed. Check correct usename/password.
+10.18.8.143 port 9027 2023-05-26 10:38:58.982091 SSH Connection OK
+10.18.8.143 port 9027 2023-05-26 10:50:48.261457 SSH Connection OK
+10.18.8.143 port 9027 2023-05-26 10:54:10.483968 SSH Connection OK
+10.18.8.143 port 9027 2023-05-26 11:02:10.195651 SSH Connection OK
+10.18.8.143 port 9027 2023-05-26 11:04:06.396889 SSH Connection OK
+10.18.8.143 port 9027 2023-05-26 11:05:15.811614 SSH Connection OK
+10.18.8.143 port 9027 2023-05-26 11:09:05.342614 SSH Connection OK
+10.18.8.143 port 9027 2023-05-26 11:11:12.852431 SSH Connection OK
+10.18.8.143 port 9027 2023-05-26 11:15:06.634140 SSH Connection OK
+10.18.8.143 port 9027 2023-05-26 11:16:20.890281 SSH Connection OK
+10.18.8.143 port 9027 2023-05-26 11:17:46.380027 SSH Connection OK
+10.18.8.143 port 9027 2023-05-26 11:22:50.513192 SSH Connection OK
+10.18.8.143 port 9027 2023-05-26 11:35:40.431539 SSH Connection OK
+10.18.8.143 port 9027 2023-05-26 11:36:07.379389 SSH Connection OK
+10.18.8.143 port 9027 2023-05-26 13:35:31.905843 SSH Connection Timeout. Please check the hostname, IP, TCP port, firewall, and device availability.
+10.18.8.143 port 9027 2023-05-26 13:35:55.789726 SSH Connection OK
