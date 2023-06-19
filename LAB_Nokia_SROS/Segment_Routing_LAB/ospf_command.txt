@@ -1,0 +1,8 @@
+configure router ospf
+no shutdown 
+             traffic-engineering
+             timers
+                 lsa-arrival 2
+                 lsa-generate 10 lsa-initial-wait 10 lsa-second-wait 10
+                 spf-wait 10 spf-initial-wait 10 spf-second-wait 10
+             exit
