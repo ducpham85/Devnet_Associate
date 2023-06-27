@@ -1,0 +1,7 @@
+show router fp-tunnel-table 1 protocol ospf
+show router tunnel-table 
+show router tunnel-table alternative 
+show router tunnel-table protocol ospf
+tools dump router ospf 0 sr-adjacencies
+tools dump router ospf 0 sr-database
+

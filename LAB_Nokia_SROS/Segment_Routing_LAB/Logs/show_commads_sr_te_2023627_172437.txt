@@ -1,0 +1,1778 @@
+show commands on Router R1-AGG1 at 2023-06-27 17:24:37.794470
+show router tunnel-table protocol sr-te
+
+===============================================================================
+IPv4 Tunnel Table (Router: Base)
+===============================================================================
+Destination           Owner     Encap TunnelId  Pref   Nexthop        Metric
+   Color                                                              
+-------------------------------------------------------------------------------
+10.250.88.2/32        sr-te     MPLS  655362    8      10.250.89.14   2
+10.250.88.3/32        sr-te     MPLS  655363    8      10.250.94.18   2
+10.250.88.4/32        sr-te     MPLS  655364    8      10.250.89.14   4
+10.250.88.5/32        sr-te     MPLS  655365    8      10.250.89.5    2
+10.250.88.6/32        sr-te     MPLS  655366    8      10.250.89.5    4
+-------------------------------------------------------------------------------
+Flags: B = BGP or MPLS backup hop available
+       L = Loop-Free Alternate (LFA) hop available
+       E = Inactive best-external BGP route
+       k = RIB-API or Forwarding Policy backup hop
+===============================================================================
+show router fp-tunnel-table 1 protocol sr-te
+
+===============================================================================
+IPv4 Tunnel Table Display
+
+Legend: 
+label stack is ordered from bottom-most to top-most
+B - FRR Backup
+===============================================================================
+Destination                                  Protocol            Tunnel-ID
+  Lbl/SID                                                         
+    NextHop                                                      Intf/Tunnel
+  Lbl/SID (backup)                                               
+    NextHop   (backup)                                           
+-------------------------------------------------------------------------------
+10.250.88.2/32                               SR-TE                655362
+  3
+    10.250.89.14                                                  SR
+10.250.88.3/32                               SR-TE                655363
+  3
+    10.250.94.18                                                  SR
+10.250.88.4/32                               SR-TE                655364
+  524285
+    10.250.89.14                                                  SR
+10.250.88.5/32                               SR-TE                655365
+  3
+    10.250.89.5                                                   SR
+10.250.88.6/32                               SR-TE                655366
+  524287
+    10.250.89.5                                                   SR
+-------------------------------------------------------------------------------
+Total Entries : 5
+-------------------------------------------------------------------------------
+===============================================================================
+show router mpls sr-te-lsp
+
+===============================================================================
+MPLS SR-TE LSPs (Originating)
+===============================================================================
+LSP Name                                            Tun     Protect   Adm  Opr
+  To                                                Id      Path           
+-------------------------------------------------------------------------------
+dyn_sr_te_lsp_to_R2-AGG2                            1       N/A       Up   Up
+  10.250.88.2                                                              
+dyn_sr_te_lsp_to_R3-CSG1                            2       N/A       Up   Up
+  10.250.88.3                                                              
+dyn_sr_te_lsp_to_R4-CSG2                            3       N/A       Up   Up
+  10.250.88.4                                                              
+dyn_sr_te_lsp_to_R5-MTC1                            4       N/A       Up   Up
+  10.250.88.5                                                              
+dyn_sr_te_lsp_to_R6-MTC2                            5       N/A       Up   Up
+  10.250.88.6                                                              
+-------------------------------------------------------------------------------
+LSPs : 5
+===============================================================================
+show router mpls sr-te-lsp detail
+
+===============================================================================
+MPLS SR-TE LSPs (Originating) (Detail)
+===============================================================================
+Legend : 
+    + - Inherited
+===============================================================================
+-------------------------------------------------------------------------------
+Type : Originating 
+-------------------------------------------------------------------------------
+LSP Name   : dyn_sr_te_lsp_to_R2-AGG2
+LSP Type        : SrTeLsp                   LSP Tunnel ID        : 1
+LSP Index       : 65536                     TTM Tunnel Id        : 655362
+From            : 10.250.88.1
+To              : 10.250.88.2
+Adm State       : Up                        Oper State           : Up
+LSP Up Time     : 0d 22:44:07               LSP Down Time        : 0d 00:00:00
+Transitions     : 1                         Path Changes         : 1
+Retry Limit     : 0                         Retry Timer          : 30 sec
+Hop Limit       : 255                       Negotiated MTU       : 9182
+PathCompMethod  : local-cspf                
+FallbkPathComp  : not-applicable            
+Metric          : N/A                       Metric Type          : igp
+Local Sr Protec*: preferred                 Label Stack Reduction: Disabled
+Load Bal Wt     : N/A                       ClassForwarding      : Disabled
+Include Grps    :                           Exclude Grps         : 
+None                                           None
+Egress Stats    : Disabled                  
+ 
+Revert Timer    : Disabled                  Next Revert In       : N/A
+Entropy Label   : Enabled+                  Oper Entropy Label   : Enabled
+Negotiated EL   : Disabled                  
+VprnAutoBind    : Enabled                   
+IGP Shortcut    : Enabled                   BGP Shortcut         : Enabled
+IGP LFA         : Disabled                  IGP Rel Metric       : Disabled
+BGPTransTun     : Enabled                   
+Oper Metric     : 2                         
+PCE Report      : Disabled+                 
+PCE Control     : Disabled                  
+Max SR Labels   : 8                         Additional FRR Labels: 2
+Path Profile    : None                      
+Admin Tags      : None                      
+ 
+Primary(a)      : dyn
+                                            Up Time              : 0d 22:44:07
+Bandwidth       : 0 Mbps                    
+-------------------------------------------------------------------------------
+Type : Originating 
+-------------------------------------------------------------------------------
+LSP Name   : dyn_sr_te_lsp_to_R3-CSG1
+LSP Type        : SrTeLsp                   LSP Tunnel ID        : 2
+LSP Index       : 65537                     TTM Tunnel Id        : 655363
+From            : 10.250.88.1
+To              : 10.250.88.3
+Adm State       : Up                        Oper State           : Up
+LSP Up Time     : 0d 22:44:07               LSP Down Time        : 0d 00:00:00
+Transitions     : 1                         Path Changes         : 1
+Retry Limit     : 0                         Retry Timer          : 30 sec
+Hop Limit       : 255                       Negotiated MTU       : 9182
+PathCompMethod  : local-cspf                
+FallbkPathComp  : not-applicable            
+Metric          : N/A                       Metric Type          : igp
+Local Sr Protec*: preferred                 Label Stack Reduction: Disabled
+Load Bal Wt     : N/A                       ClassForwarding      : Disabled
+Include Grps    :                           Exclude Grps         : 
+None                                           None
+Egress Stats    : Disabled                  
+ 
+Revert Timer    : Disabled                  Next Revert In       : N/A
+Entropy Label   : Enabled+                  Oper Entropy Label   : Enabled
+Negotiated EL   : Disabled                  
+VprnAutoBind    : Enabled                   
+IGP Shortcut    : Enabled                   BGP Shortcut         : Enabled
+IGP LFA         : Disabled                  IGP Rel Metric       : Disabled
+BGPTransTun     : Enabled                   
+Oper Metric     : 2                         
+PCE Report      : Disabled+                 
+PCE Control     : Disabled                  
+Max SR Labels   : 8                         Additional FRR Labels: 2
+Path Profile    : None                      
+Admin Tags      : None                      
+ 
+Primary(a)      : dyn
+                                            Up Time              : 0d 22:44:07
+Bandwidth       : 0 Mbps                    
+-------------------------------------------------------------------------------
+Type : Originating 
+-------------------------------------------------------------------------------
+LSP Name   : dyn_sr_te_lsp_to_R4-CSG2
+LSP Type        : SrTeLsp                   LSP Tunnel ID        : 3
+LSP Index       : 65538                     TTM Tunnel Id        : 655364
+From            : 10.250.88.1
+To              : 10.250.88.4
+Adm State       : Up                        Oper State           : Up
+LSP Up Time     : 0d 22:44:07               LSP Down Time        : 0d 00:00:00
+Transitions     : 1                         Path Changes         : 1
+Retry Limit     : 0                         Retry Timer          : 30 sec
+Hop Limit       : 255                       Negotiated MTU       : 9178
+PathCompMethod  : local-cspf                
+FallbkPathComp  : not-applicable            
+Metric          : N/A                       Metric Type          : igp
+Local Sr Protec*: preferred                 Label Stack Reduction: Disabled
+Load Bal Wt     : N/A                       ClassForwarding      : Disabled
+Include Grps    :                           Exclude Grps         : 
+None                                           None
+Egress Stats    : Disabled                  
+ 
+Revert Timer    : Disabled                  Next Revert In       : N/A
+Entropy Label   : Enabled+                  Oper Entropy Label   : Enabled
+Negotiated EL   : Disabled                  
+VprnAutoBind    : Enabled                   
+IGP Shortcut    : Enabled                   BGP Shortcut         : Enabled
+IGP LFA         : Disabled                  IGP Rel Metric       : Disabled
+BGPTransTun     : Enabled                   
+Oper Metric     : 4                         
+PCE Report      : Disabled+                 
+PCE Control     : Disabled                  
+Max SR Labels   : 8                         Additional FRR Labels: 2
+Path Profile    : None                      
+Admin Tags      : None                      
+ 
+Primary(a)      : dyn
+                                            Up Time              : 0d 22:44:07
+Bandwidth       : 0 Mbps                    
+-------------------------------------------------------------------------------
+Type : Originating 
+-------------------------------------------------------------------------------
+LSP Name   : dyn_sr_te_lsp_to_R5-MTC1
+LSP Type        : SrTeLsp                   LSP Tunnel ID        : 4
+LSP Index       : 65539                     TTM Tunnel Id        : 655365
+From            : 10.250.88.1
+To              : 10.250.88.5
+Adm State       : Up                        Oper State           : Up
+LSP Up Time     : 0d 22:44:07               LSP Down Time        : 0d 00:00:00
+Transitions     : 1                         Path Changes         : 1
+Retry Limit     : 0                         Retry Timer          : 30 sec
+Hop Limit       : 255                       Negotiated MTU       : 9182
+PathCompMethod  : local-cspf                
+FallbkPathComp  : not-applicable            
+Metric          : N/A                       Metric Type          : igp
+Local Sr Protec*: preferred                 Label Stack Reduction: Disabled
+Load Bal Wt     : N/A                       ClassForwarding      : Disabled
+Include Grps    :                           Exclude Grps         : 
+None                                           None
+Egress Stats    : Disabled                  
+ 
+Revert Timer    : Disabled                  Next Revert In       : N/A
+Entropy Label   : Enabled+                  Oper Entropy Label   : Enabled
+Negotiated EL   : Disabled                  
+VprnAutoBind    : Enabled                   
+IGP Shortcut    : Enabled                   BGP Shortcut         : Enabled
+IGP LFA         : Disabled                  IGP Rel Metric       : Disabled
+BGPTransTun     : Enabled                   
+Oper Metric     : 2                         
+PCE Report      : Disabled+                 
+PCE Control     : Disabled                  
+Max SR Labels   : 8                         Additional FRR Labels: 2
+Path Profile    : None                      
+Admin Tags      : None                      
+ 
+Primary(a)      : dyn
+                                            Up Time              : 0d 22:44:07
+Bandwidth       : 0 Mbps                    
+-------------------------------------------------------------------------------
+Type : Originating 
+-------------------------------------------------------------------------------
+LSP Name   : dyn_sr_te_lsp_to_R6-MTC2
+LSP Type        : SrTeLsp                   LSP Tunnel ID        : 5
+LSP Index       : 65540                     TTM Tunnel Id        : 655366
+From            : 10.250.88.1
+To              : 10.250.88.6
+Adm State       : Up                        Oper State           : Up
+LSP Up Time     : 0d 22:44:07               LSP Down Time        : 0d 00:00:00
+Transitions     : 1                         Path Changes         : 1
+Retry Limit     : 0                         Retry Timer          : 30 sec
+Hop Limit       : 255                       Negotiated MTU       : 9178
+PathCompMethod  : local-cspf                
+FallbkPathComp  : not-applicable            
+Metric          : N/A                       Metric Type          : igp
+Local Sr Protec*: preferred                 Label Stack Reduction: Disabled
+Load Bal Wt     : N/A                       ClassForwarding      : Disabled
+Include Grps    :                           Exclude Grps         : 
+None                                           None
+Egress Stats    : Disabled                  
+ 
+Revert Timer    : Disabled                  Next Revert In       : N/A
+Entropy Label   : Enabled+                  Oper Entropy Label   : Enabled
+Negotiated EL   : Disabled                  
+VprnAutoBind    : Enabled                   
+IGP Shortcut    : Enabled                   BGP Shortcut         : Enabled
+IGP LFA         : Disabled                  IGP Rel Metric       : Disabled
+BGPTransTun     : Enabled                   
+Oper Metric     : 4                         
+PCE Report      : Disabled+                 
+PCE Control     : Disabled                  
+Max SR Labels   : 8                         Additional FRR Labels: 2
+Path Profile    : None                      
+Admin Tags      : None                      
+ 
+Primary(a)      : dyn
+                                            Up Time              : 0d 22:44:07
+Bandwidth       : 0 Mbps                    
+===============================================================================
+* indicates that the corresponding row element may have been truncated.
+
+
+show commands on Router R2-AGG2 at 2023-06-27 17:24:41.064887
+show router tunnel-table protocol sr-te
+
+===============================================================================
+IPv4 Tunnel Table (Router: Base)
+===============================================================================
+Destination           Owner     Encap TunnelId  Pref   Nexthop        Metric
+   Color                                                              
+-------------------------------------------------------------------------------
+10.250.88.1/32        sr-te     MPLS  655362    8      10.250.89.13   2
+10.250.88.3/32        sr-te     MPLS  655363    8      10.250.89.13   4
+10.250.88.4/32        sr-te     MPLS  655364    8      10.250.94.21   2
+10.250.88.5/32        sr-te     MPLS  655365    8      10.250.89.9    4
+10.250.88.6/32        sr-te     MPLS  655366    8      10.250.89.9    2
+-------------------------------------------------------------------------------
+Flags: B = BGP or MPLS backup hop available
+       L = Loop-Free Alternate (LFA) hop available
+       E = Inactive best-external BGP route
+       k = RIB-API or Forwarding Policy backup hop
+===============================================================================
+show router fp-tunnel-table 1 protocol sr-te
+
+===============================================================================
+IPv4 Tunnel Table Display
+
+Legend: 
+label stack is ordered from bottom-most to top-most
+B - FRR Backup
+===============================================================================
+Destination                                  Protocol            Tunnel-ID
+  Lbl/SID                                                         
+    NextHop                                                      Intf/Tunnel
+  Lbl/SID (backup)                                               
+    NextHop   (backup)                                           
+-------------------------------------------------------------------------------
+10.250.88.1/32                               SR-TE                655362
+  3
+    10.250.89.13                                                  SR
+10.250.88.3/32                               SR-TE                655363
+  524285
+    10.250.89.13                                                  SR
+10.250.88.4/32                               SR-TE                655364
+  3
+    10.250.94.21                                                  SR
+10.250.88.5/32                               SR-TE                655365
+  524287
+    10.250.89.9                                                   SR
+10.250.88.6/32                               SR-TE                655366
+  3
+    10.250.89.9                                                   SR
+-------------------------------------------------------------------------------
+Total Entries : 5
+-------------------------------------------------------------------------------
+===============================================================================
+show router mpls sr-te-lsp
+
+===============================================================================
+MPLS SR-TE LSPs (Originating)
+===============================================================================
+LSP Name                                            Tun     Protect   Adm  Opr
+  To                                                Id      Path           
+-------------------------------------------------------------------------------
+dyn_sr_te_lsp_to_R1-AGG1                            1       N/A       Up   Up
+  10.250.88.1                                                              
+dyn_sr_te_lsp_to_R3-CSG1                            2       N/A       Up   Up
+  10.250.88.3                                                              
+dyn_sr_te_lsp_to_R4-CSG2                            3       N/A       Up   Up
+  10.250.88.4                                                              
+dyn_sr_te_lsp_to_R5-MTC1                            4       N/A       Up   Up
+  10.250.88.5                                                              
+dyn_sr_te_lsp_to_R6-MTC2                            5       N/A       Up   Up
+  10.250.88.6                                                              
+-------------------------------------------------------------------------------
+LSPs : 5
+===============================================================================
+show router mpls sr-te-lsp detail
+
+===============================================================================
+MPLS SR-TE LSPs (Originating) (Detail)
+===============================================================================
+Legend : 
+    + - Inherited
+===============================================================================
+-------------------------------------------------------------------------------
+Type : Originating 
+-------------------------------------------------------------------------------
+LSP Name   : dyn_sr_te_lsp_to_R1-AGG1
+LSP Type        : SrTeLsp                   LSP Tunnel ID        : 1
+LSP Index       : 65536                     TTM Tunnel Id        : 655362
+From            : 10.250.88.2
+To              : 10.250.88.1
+Adm State       : Up                        Oper State           : Up
+LSP Up Time     : 0d 06:56:43               LSP Down Time        : 0d 00:00:00
+Transitions     : 1                         Path Changes         : 1
+Retry Limit     : 0                         Retry Timer          : 30 sec
+Hop Limit       : 255                       Negotiated MTU       : 9182
+PathCompMethod  : local-cspf                
+FallbkPathComp  : not-applicable            
+Metric          : N/A                       Metric Type          : igp
+Local Sr Protec*: preferred                 Label Stack Reduction: Disabled
+Load Bal Wt     : N/A                       ClassForwarding      : Disabled
+Include Grps    :                           Exclude Grps         : 
+None                                           None
+Egress Stats    : Disabled                  
+ 
+Revert Timer    : Disabled                  Next Revert In       : N/A
+Entropy Label   : Enabled+                  Oper Entropy Label   : Enabled
+Negotiated EL   : Disabled                  
+VprnAutoBind    : Enabled                   
+IGP Shortcut    : Enabled                   BGP Shortcut         : Enabled
+IGP LFA         : Disabled                  IGP Rel Metric       : Disabled
+BGPTransTun     : Enabled                   
+Oper Metric     : 2                         
+PCE Report      : Disabled+                 
+PCE Control     : Disabled                  
+Max SR Labels   : 8                         Additional FRR Labels: 2
+Path Profile    : None                      
+Admin Tags      : None                      
+ 
+Primary(a)      : dyn
+                                            Up Time              : 0d 06:56:43
+Bandwidth       : 0 Mbps                    
+-------------------------------------------------------------------------------
+Type : Originating 
+-------------------------------------------------------------------------------
+LSP Name   : dyn_sr_te_lsp_to_R3-CSG1
+LSP Type        : SrTeLsp                   LSP Tunnel ID        : 2
+LSP Index       : 65537                     TTM Tunnel Id        : 655363
+From            : 10.250.88.2
+To              : 10.250.88.3
+Adm State       : Up                        Oper State           : Up
+LSP Up Time     : 0d 06:56:43               LSP Down Time        : 0d 00:00:00
+Transitions     : 1                         Path Changes         : 1
+Retry Limit     : 0                         Retry Timer          : 30 sec
+Hop Limit       : 255                       Negotiated MTU       : 9178
+PathCompMethod  : local-cspf                
+FallbkPathComp  : not-applicable            
+Metric          : N/A                       Metric Type          : igp
+Local Sr Protec*: preferred                 Label Stack Reduction: Disabled
+Load Bal Wt     : N/A                       ClassForwarding      : Disabled
+Include Grps    :                           Exclude Grps         : 
+None                                           None
+Egress Stats    : Disabled                  
+ 
+Revert Timer    : Disabled                  Next Revert In       : N/A
+Entropy Label   : Enabled+                  Oper Entropy Label   : Enabled
+Negotiated EL   : Disabled                  
+VprnAutoBind    : Enabled                   
+IGP Shortcut    : Enabled                   BGP Shortcut         : Enabled
+IGP LFA         : Disabled                  IGP Rel Metric       : Disabled
+BGPTransTun     : Enabled                   
+Oper Metric     : 4                         
+PCE Report      : Disabled+                 
+PCE Control     : Disabled                  
+Max SR Labels   : 8                         Additional FRR Labels: 2
+Path Profile    : None                      
+Admin Tags      : None                      
+ 
+Primary(a)      : dyn
+                                            Up Time              : 0d 06:56:43
+Bandwidth       : 0 Mbps                    
+-------------------------------------------------------------------------------
+Type : Originating 
+-------------------------------------------------------------------------------
+LSP Name   : dyn_sr_te_lsp_to_R4-CSG2
+LSP Type        : SrTeLsp                   LSP Tunnel ID        : 3
+LSP Index       : 65538                     TTM Tunnel Id        : 655364
+From            : 10.250.88.2
+To              : 10.250.88.4
+Adm State       : Up                        Oper State           : Up
+LSP Up Time     : 0d 06:56:43               LSP Down Time        : 0d 00:00:00
+Transitions     : 1                         Path Changes         : 1
+Retry Limit     : 0                         Retry Timer          : 30 sec
+Hop Limit       : 255                       Negotiated MTU       : 9182
+PathCompMethod  : local-cspf                
+FallbkPathComp  : not-applicable            
+Metric          : N/A                       Metric Type          : igp
+Local Sr Protec*: preferred                 Label Stack Reduction: Disabled
+Load Bal Wt     : N/A                       ClassForwarding      : Disabled
+Include Grps    :                           Exclude Grps         : 
+None                                           None
+Egress Stats    : Disabled                  
+ 
+Revert Timer    : Disabled                  Next Revert In       : N/A
+Entropy Label   : Enabled+                  Oper Entropy Label   : Enabled
+Negotiated EL   : Disabled                  
+VprnAutoBind    : Enabled                   
+IGP Shortcut    : Enabled                   BGP Shortcut         : Enabled
+IGP LFA         : Disabled                  IGP Rel Metric       : Disabled
+BGPTransTun     : Enabled                   
+Oper Metric     : 2                         
+PCE Report      : Disabled+                 
+PCE Control     : Disabled                  
+Max SR Labels   : 8                         Additional FRR Labels: 2
+Path Profile    : None                      
+Admin Tags      : None                      
+ 
+Primary(a)      : dyn
+                                            Up Time              : 0d 06:56:43
+Bandwidth       : 0 Mbps                    
+-------------------------------------------------------------------------------
+Type : Originating 
+-------------------------------------------------------------------------------
+LSP Name   : dyn_sr_te_lsp_to_R5-MTC1
+LSP Type        : SrTeLsp                   LSP Tunnel ID        : 4
+LSP Index       : 65539                     TTM Tunnel Id        : 655365
+From            : 10.250.88.2
+To              : 10.250.88.5
+Adm State       : Up                        Oper State           : Up
+LSP Up Time     : 0d 06:56:43               LSP Down Time        : 0d 00:00:00
+Transitions     : 1                         Path Changes         : 1
+Retry Limit     : 0                         Retry Timer          : 30 sec
+Hop Limit       : 255                       Negotiated MTU       : 9178
+PathCompMethod  : local-cspf                
+FallbkPathComp  : not-applicable            
+Metric          : N/A                       Metric Type          : igp
+Local Sr Protec*: preferred                 Label Stack Reduction: Disabled
+Load Bal Wt     : N/A                       ClassForwarding      : Disabled
+Include Grps    :                           Exclude Grps         : 
+None                                           None
+Egress Stats    : Disabled                  
+ 
+Revert Timer    : Disabled                  Next Revert In       : N/A
+Entropy Label   : Enabled+                  Oper Entropy Label   : Enabled
+Negotiated EL   : Disabled                  
+VprnAutoBind    : Enabled                   
+IGP Shortcut    : Enabled                   BGP Shortcut         : Enabled
+IGP LFA         : Disabled                  IGP Rel Metric       : Disabled
+BGPTransTun     : Enabled                   
+Oper Metric     : 4                         
+PCE Report      : Disabled+                 
+PCE Control     : Disabled                  
+Max SR Labels   : 8                         Additional FRR Labels: 2
+Path Profile    : None                      
+Admin Tags      : None                      
+ 
+Primary(a)      : dyn
+                                            Up Time              : 0d 06:56:43
+Bandwidth       : 0 Mbps                    
+-------------------------------------------------------------------------------
+Type : Originating 
+-------------------------------------------------------------------------------
+LSP Name   : dyn_sr_te_lsp_to_R6-MTC2
+LSP Type        : SrTeLsp                   LSP Tunnel ID        : 5
+LSP Index       : 65540                     TTM Tunnel Id        : 655366
+From            : 10.250.88.2
+To              : 10.250.88.6
+Adm State       : Up                        Oper State           : Up
+LSP Up Time     : 0d 06:56:43               LSP Down Time        : 0d 00:00:00
+Transitions     : 1                         Path Changes         : 1
+Retry Limit     : 0                         Retry Timer          : 30 sec
+Hop Limit       : 255                       Negotiated MTU       : 9182
+PathCompMethod  : local-cspf                
+FallbkPathComp  : not-applicable            
+Metric          : N/A                       Metric Type          : igp
+Local Sr Protec*: preferred                 Label Stack Reduction: Disabled
+Load Bal Wt     : N/A                       ClassForwarding      : Disabled
+Include Grps    :                           Exclude Grps         : 
+None                                           None
+Egress Stats    : Disabled                  
+ 
+Revert Timer    : Disabled                  Next Revert In       : N/A
+Entropy Label   : Enabled+                  Oper Entropy Label   : Enabled
+Negotiated EL   : Disabled                  
+VprnAutoBind    : Enabled                   
+IGP Shortcut    : Enabled                   BGP Shortcut         : Enabled
+IGP LFA         : Disabled                  IGP Rel Metric       : Disabled
+BGPTransTun     : Enabled                   
+Oper Metric     : 2                         
+PCE Report      : Disabled+                 
+PCE Control     : Disabled                  
+Max SR Labels   : 8                         Additional FRR Labels: 2
+Path Profile    : None                      
+Admin Tags      : None                      
+ 
+Primary(a)      : dyn
+                                            Up Time              : 0d 06:56:43
+Bandwidth       : 0 Mbps                    
+===============================================================================
+* indicates that the corresponding row element may have been truncated.
+
+
+show commands on Router R3-CSG1 at 2023-06-27 17:24:44.368503
+show router tunnel-table protocol sr-te
+
+===============================================================================
+IPv4 Tunnel Table (Router: Base)
+===============================================================================
+Destination           Owner     Encap TunnelId  Pref   Nexthop        Metric
+   Color                                                              
+-------------------------------------------------------------------------------
+10.250.88.1/32        sr-te     MPLS  655364    8      10.250.94.17   2
+10.250.88.2/32        sr-te     MPLS  655365    8      10.250.94.17   4
+10.250.88.4/32        sr-te     MPLS  655366    8      10.250.89.26   2
+10.250.88.5/32        sr-te     MPLS  655369    8      10.250.89.26   8
+10.250.88.6/32        sr-te     MPLS  655368    8      10.250.94.17   6
+-------------------------------------------------------------------------------
+Flags: B = BGP or MPLS backup hop available
+       L = Loop-Free Alternate (LFA) hop available
+       E = Inactive best-external BGP route
+       k = RIB-API or Forwarding Policy backup hop
+===============================================================================
+show router fp-tunnel-table 1 protocol sr-te
+
+===============================================================================
+IPv4 Tunnel Table Display
+
+Legend: 
+label stack is ordered from bottom-most to top-most
+B - FRR Backup
+===============================================================================
+Destination                                  Protocol            Tunnel-ID
+  Lbl/SID                                                         
+    NextHop                                                      Intf/Tunnel
+  Lbl/SID (backup)                                               
+    NextHop   (backup)                                           
+-------------------------------------------------------------------------------
+10.250.88.1/32                               SR-TE                655364
+  3
+    10.250.94.17                                                  SR
+10.250.88.2/32                               SR-TE                655365
+  524286
+    10.250.94.17                                                  SR
+10.250.88.4/32                               SR-TE                655366
+  3
+    10.250.89.26                                                  SR
+10.250.88.5/32                               SR-TE                655369
+  524287/524286/524287
+    10.250.89.26                                                  SR
+10.250.88.6/32                               SR-TE                655368
+  524287/524287
+    10.250.94.17                                                  SR
+-------------------------------------------------------------------------------
+Total Entries : 5
+-------------------------------------------------------------------------------
+===============================================================================
+show router mpls sr-te-lsp
+
+===============================================================================
+MPLS SR-TE LSPs (Originating)
+===============================================================================
+LSP Name                                            Tun     Protect   Adm  Opr
+  To                                                Id      Path           
+-------------------------------------------------------------------------------
+dyn_sr_te_lsp_to_R1-AGG1                            3       N/A       Up   Up
+  10.250.88.1                                                              
+dyn_sr_te_lsp_to_R2-AGG2                            4       N/A       Up   Up
+  10.250.88.2                                                              
+dyn_sr_te_lsp_to_R4-CSG2                            5       N/A       Up   Up
+  10.250.88.4                                                              
+dyn_sr_te_lsp_to_R5-MTC1                            6       N/A       Dwn  Dwn
+  10.250.88.5                                                              
+dyn_sr_te_lsp_to_R6-MTC2                            7       N/A       Up   Up
+  10.250.88.6                                                              
+strict_sr_te_lsp_R3_R4_R2_R1_R5                     8       N/A       Up   Up
+  10.250.88.5                                                              
+-------------------------------------------------------------------------------
+LSPs : 6
+===============================================================================
+show router mpls sr-te-lsp detail
+
+===============================================================================
+MPLS SR-TE LSPs (Originating) (Detail)
+===============================================================================
+Legend : 
+    + - Inherited
+===============================================================================
+-------------------------------------------------------------------------------
+Type : Originating 
+-------------------------------------------------------------------------------
+LSP Name   : dyn_sr_te_lsp_to_R1-AGG1
+LSP Type        : SrTeLsp                   LSP Tunnel ID        : 3
+LSP Index       : 65538                     TTM Tunnel Id        : 655364
+From            : 10.250.88.3
+To              : 10.250.88.1
+Adm State       : Up                        Oper State           : Up
+LSP Up Time     : 0d 22:45:32               LSP Down Time        : 0d 00:00:00
+Transitions     : 1                         Path Changes         : 1
+Retry Limit     : 0                         Retry Timer          : 30 sec
+Hop Limit       : 255                       Negotiated MTU       : 9182
+PathCompMethod  : local-cspf                
+FallbkPathComp  : not-applicable            
+Metric          : N/A                       Metric Type          : igp
+Local Sr Protec*: preferred                 Label Stack Reduction: Disabled
+Load Bal Wt     : N/A                       ClassForwarding      : Disabled
+Include Grps    :                           Exclude Grps         : 
+None                                           None
+Egress Stats    : Disabled                  
+ 
+Revert Timer    : Disabled                  Next Revert In       : N/A
+Entropy Label   : Enabled+                  Oper Entropy Label   : Enabled
+Negotiated EL   : Disabled                  
+VprnAutoBind    : Enabled                   
+IGP Shortcut    : Enabled                   BGP Shortcut         : Enabled
+IGP LFA         : Disabled                  IGP Rel Metric       : Disabled
+BGPTransTun     : Enabled                   
+Oper Metric     : 2                         
+PCE Report      : Disabled+                 
+PCE Control     : Disabled                  
+Max SR Labels   : 8                         Additional FRR Labels: 2
+Path Profile    : None                      
+Admin Tags      : None                      
+ 
+Primary(a)      : dyn
+                                            Up Time              : 0d 22:45:32
+Bandwidth       : 0 Mbps                    
+-------------------------------------------------------------------------------
+Type : Originating 
+-------------------------------------------------------------------------------
+LSP Name   : dyn_sr_te_lsp_to_R2-AGG2
+LSP Type        : SrTeLsp                   LSP Tunnel ID        : 4
+LSP Index       : 65539                     TTM Tunnel Id        : 655365
+From            : 10.250.88.3
+To              : 10.250.88.2
+Adm State       : Up                        Oper State           : Up
+LSP Up Time     : 0d 22:45:32               LSP Down Time        : 0d 00:00:00
+Transitions     : 1                         Path Changes         : 1
+Retry Limit     : 0                         Retry Timer          : 30 sec
+Hop Limit       : 255                       Negotiated MTU       : 9178
+PathCompMethod  : local-cspf                
+FallbkPathComp  : not-applicable            
+Metric          : N/A                       Metric Type          : igp
+Local Sr Protec*: preferred                 Label Stack Reduction: Disabled
+Load Bal Wt     : N/A                       ClassForwarding      : Disabled
+Include Grps    :                           Exclude Grps         : 
+None                                           None
+Egress Stats    : Disabled                  
+ 
+Revert Timer    : Disabled                  Next Revert In       : N/A
+Entropy Label   : Enabled+                  Oper Entropy Label   : Enabled
+Negotiated EL   : Disabled                  
+VprnAutoBind    : Enabled                   
+IGP Shortcut    : Enabled                   BGP Shortcut         : Enabled
+IGP LFA         : Disabled                  IGP Rel Metric       : Disabled
+BGPTransTun     : Enabled                   
+Oper Metric     : 4                         
+PCE Report      : Disabled+                 
+PCE Control     : Disabled                  
+Max SR Labels   : 8                         Additional FRR Labels: 2
+Path Profile    : None                      
+Admin Tags      : None                      
+ 
+Primary(a)      : dyn
+                                            Up Time              : 0d 22:45:32
+Bandwidth       : 0 Mbps                    
+-------------------------------------------------------------------------------
+Type : Originating 
+-------------------------------------------------------------------------------
+LSP Name   : dyn_sr_te_lsp_to_R4-CSG2
+LSP Type        : SrTeLsp                   LSP Tunnel ID        : 5
+LSP Index       : 65540                     TTM Tunnel Id        : 655366
+From            : 10.250.88.3
+To              : 10.250.88.4
+Adm State       : Up                        Oper State           : Up
+LSP Up Time     : 0d 22:45:32               LSP Down Time        : 0d 00:00:00
+Transitions     : 1                         Path Changes         : 1
+Retry Limit     : 0                         Retry Timer          : 30 sec
+Hop Limit       : 255                       Negotiated MTU       : 9182
+PathCompMethod  : local-cspf                
+FallbkPathComp  : not-applicable            
+Metric          : N/A                       Metric Type          : igp
+Local Sr Protec*: preferred                 Label Stack Reduction: Disabled
+Load Bal Wt     : N/A                       ClassForwarding      : Disabled
+Include Grps    :                           Exclude Grps         : 
+None                                           None
+Egress Stats    : Disabled                  
+ 
+Revert Timer    : Disabled                  Next Revert In       : N/A
+Entropy Label   : Enabled+                  Oper Entropy Label   : Enabled
+Negotiated EL   : Disabled                  
+VprnAutoBind    : Enabled                   
+IGP Shortcut    : Enabled                   BGP Shortcut         : Enabled
+IGP LFA         : Disabled                  IGP Rel Metric       : Disabled
+BGPTransTun     : Enabled                   
+Oper Metric     : 2                         
+PCE Report      : Disabled+                 
+PCE Control     : Disabled                  
+Max SR Labels   : 8                         Additional FRR Labels: 2
+Path Profile    : None                      
+Admin Tags      : None                      
+ 
+Primary(a)      : dyn
+                                            Up Time              : 0d 22:45:32
+Bandwidth       : 0 Mbps                    
+-------------------------------------------------------------------------------
+Type : Originating 
+-------------------------------------------------------------------------------
+LSP Name   : dyn_sr_te_lsp_to_R5-MTC1
+LSP Type        : SrTeLsp                   LSP Tunnel ID        : 6
+LSP Index       : 65541                     TTM Tunnel Id        : 655367
+From            : 10.250.88.3
+To              : 10.250.88.5
+Adm State       : Down                      Oper State           : Down
+LSP Up Time     : 0d 00:00:00               LSP Down Time        : 0d 01:12:24
+Transitions     : 2                         Path Changes         : 2
+Retry Limit     : 0                         Retry Timer          : 30 sec
+Hop Limit       : 255                       Negotiated MTU       : 0
+PathCompMethod  : local-cspf                
+FallbkPathComp  : not-applicable            
+Metric          : N/A                       Metric Type          : igp
+Local Sr Protec*: preferred                 Label Stack Reduction: Disabled
+Load Bal Wt     : N/A                       ClassForwarding      : Disabled
+Include Grps    :                           Exclude Grps         : 
+None                                           None
+Egress Stats    : Disabled                  
+ 
+Revert Timer    : Disabled                  Next Revert In       : N/A
+Entropy Label   : Enabled+                  Oper Entropy Label   : Disabled
+Negotiated EL   : Disabled                  
+VprnAutoBind    : Enabled                   
+IGP Shortcut    : Enabled                   BGP Shortcut         : Enabled
+IGP LFA         : Disabled                  IGP Rel Metric       : Disabled
+BGPTransTun     : Enabled                   
+Oper Metric     : N/A                       
+PCE Report      : Disabled+                 
+PCE Control     : Disabled                  
+Max SR Labels   : 8                         Additional FRR Labels: 2
+Path Profile    : None                      
+Admin Tags      : None                      
+ 
+Primary         : dyn
+                                            Down Time            : 0d 01:12:24
+Bandwidth       : 0 Mbps                    
+-------------------------------------------------------------------------------
+Type : Originating 
+-------------------------------------------------------------------------------
+LSP Name   : dyn_sr_te_lsp_to_R6-MTC2
+LSP Type        : SrTeLsp                   LSP Tunnel ID        : 7
+LSP Index       : 65542                     TTM Tunnel Id        : 655368
+From            : 10.250.88.3
+To              : 10.250.88.6
+Adm State       : Up                        Oper State           : Up
+LSP Up Time     : 0d 22:45:32               LSP Down Time        : 0d 00:00:00
+Transitions     : 1                         Path Changes         : 1
+Retry Limit     : 0                         Retry Timer          : 30 sec
+Hop Limit       : 255                       Negotiated MTU       : 9174
+PathCompMethod  : local-cspf                
+FallbkPathComp  : not-applicable            
+Metric          : N/A                       Metric Type          : igp
+Local Sr Protec*: preferred                 Label Stack Reduction: Disabled
+Load Bal Wt     : N/A                       ClassForwarding      : Disabled
+Include Grps    :                           Exclude Grps         : 
+None                                           None
+Egress Stats    : Disabled                  
+ 
+Revert Timer    : Disabled                  Next Revert In       : N/A
+Entropy Label   : Enabled+                  Oper Entropy Label   : Enabled
+Negotiated EL   : Disabled                  
+VprnAutoBind    : Enabled                   
+IGP Shortcut    : Enabled                   BGP Shortcut         : Enabled
+IGP LFA         : Disabled                  IGP Rel Metric       : Disabled
+BGPTransTun     : Enabled                   
+Oper Metric     : 6                         
+PCE Report      : Disabled+                 
+PCE Control     : Disabled                  
+Max SR Labels   : 8                         Additional FRR Labels: 2
+Path Profile    : None                      
+Admin Tags      : None                      
+ 
+Primary(a)      : dyn
+                                            Up Time              : 0d 22:45:32
+Bandwidth       : 0 Mbps                    
+-------------------------------------------------------------------------------
+Type : Originating 
+-------------------------------------------------------------------------------
+LSP Name   : strict_sr_te_lsp_R3_R4_R2_R1_R5
+LSP Type        : SrTeLsp                   LSP Tunnel ID        : 8
+LSP Index       : 65543                     TTM Tunnel Id        : 655369
+From            : 10.250.88.3
+To              : 10.250.88.5
+Adm State       : Up                        Oper State           : Up
+LSP Up Time     : 0d 02:20:07               LSP Down Time        : 0d 00:00:00
+Transitions     : 1                         Path Changes         : 1
+Retry Limit     : 0                         Retry Timer          : 30 sec
+Hop Limit       : 255                       Negotiated MTU       : 9170
+PathCompMethod  : local-cspf                
+FallbkPathComp  : not-applicable            
+Metric          : N/A                       Metric Type          : igp
+Local Sr Protec*: preferred                 Label Stack Reduction: Disabled
+Load Bal Wt     : N/A                       ClassForwarding      : Disabled
+Include Grps    :                           Exclude Grps         : 
+None                                           None
+Egress Stats    : Disabled                  
+ 
+Revert Timer    : Disabled                  Next Revert In       : N/A
+Entropy Label   : Enabled+                  Oper Entropy Label   : Enabled
+Negotiated EL   : Disabled                  
+VprnAutoBind    : Enabled                   
+IGP Shortcut    : Enabled                   BGP Shortcut         : Enabled
+IGP LFA         : Disabled                  IGP Rel Metric       : Disabled
+BGPTransTun     : Enabled                   
+Oper Metric     : 8                         
+PCE Report      : Disabled+                 
+PCE Control     : Disabled                  
+Max SR Labels   : 8                         Additional FRR Labels: 2
+Path Profile    : None                      
+Admin Tags      : None                      
+ 
+Primary(a)      : strict_path_R3_R4_R2_R1_R5
+                                            Up Time              : 0d 02:20:07
+Bandwidth       : 0 Mbps                    
+===============================================================================
+* indicates that the corresponding row element may have been truncated.
+
+
+show commands on Router R4-CSG2 at 2023-06-27 17:24:47.711928
+show router tunnel-table protocol sr-te
+
+===============================================================================
+IPv4 Tunnel Table (Router: Base)
+===============================================================================
+Destination           Owner     Encap TunnelId  Pref   Nexthop        Metric
+   Color                                                              
+-------------------------------------------------------------------------------
+10.250.88.1/32        sr-te     MPLS  655362    8      10.250.89.25   4
+10.250.88.2/32        sr-te     MPLS  655363    8      10.250.94.22   2
+10.250.88.3/32        sr-te     MPLS  655364    8      10.250.89.25   2
+10.250.88.5/32        sr-te     MPLS  655365    8      10.250.94.22   6
+10.250.88.6/32        sr-te     MPLS  655366    8      10.250.94.22   4
+-------------------------------------------------------------------------------
+Flags: B = BGP or MPLS backup hop available
+       L = Loop-Free Alternate (LFA) hop available
+       E = Inactive best-external BGP route
+       k = RIB-API or Forwarding Policy backup hop
+===============================================================================
+show router fp-tunnel-table 1 protocol sr-te
+
+===============================================================================
+IPv4 Tunnel Table Display
+
+Legend: 
+label stack is ordered from bottom-most to top-most
+B - FRR Backup
+===============================================================================
+Destination                                  Protocol            Tunnel-ID
+  Lbl/SID                                                         
+    NextHop                                                      Intf/Tunnel
+  Lbl/SID (backup)                                               
+    NextHop   (backup)                                           
+-------------------------------------------------------------------------------
+10.250.88.1/32                               SR-TE                655362
+  524287
+    10.250.89.25                                                  SR
+10.250.88.2/32                               SR-TE                655363
+  3
+    10.250.94.22                                                  SR
+10.250.88.3/32                               SR-TE                655364
+  3
+    10.250.89.25                                                  SR
+10.250.88.5/32                               SR-TE                655365
+  524287/524286
+    10.250.94.22                                                  SR
+10.250.88.6/32                               SR-TE                655366
+  524287
+    10.250.94.22                                                  SR
+-------------------------------------------------------------------------------
+Total Entries : 5
+-------------------------------------------------------------------------------
+===============================================================================
+show router mpls sr-te-lsp
+
+===============================================================================
+MPLS SR-TE LSPs (Originating)
+===============================================================================
+LSP Name                                            Tun     Protect   Adm  Opr
+  To                                                Id      Path           
+-------------------------------------------------------------------------------
+dyn_sr_te_lsp_to_R1-AGG1                            1       N/A       Up   Up
+  10.250.88.1                                                              
+dyn_sr_te_lsp_to_R2-AGG2                            2       N/A       Up   Up
+  10.250.88.2                                                              
+dyn_sr_te_lsp_to_R3-CSG1                            3       N/A       Up   Up
+  10.250.88.3                                                              
+dyn_sr_te_lsp_to_R5-MTC1                            4       N/A       Up   Up
+  10.250.88.5                                                              
+dyn_sr_te_lsp_to_R6-MTC2                            5       N/A       Up   Up
+  10.250.88.6                                                              
+-------------------------------------------------------------------------------
+LSPs : 5
+===============================================================================
+show router mpls sr-te-lsp detail
+
+===============================================================================
+MPLS SR-TE LSPs (Originating) (Detail)
+===============================================================================
+Legend : 
+    + - Inherited
+===============================================================================
+-------------------------------------------------------------------------------
+Type : Originating 
+-------------------------------------------------------------------------------
+LSP Name   : dyn_sr_te_lsp_to_R1-AGG1
+LSP Type        : SrTeLsp                   LSP Tunnel ID        : 1
+LSP Index       : 65536                     TTM Tunnel Id        : 655362
+From            : 10.250.88.4
+To              : 10.250.88.1
+Adm State       : Up                        Oper State           : Up
+LSP Up Time     : 0d 06:56:39               LSP Down Time        : 0d 00:00:00
+Transitions     : 1                         Path Changes         : 1
+Retry Limit     : 0                         Retry Timer          : 30 sec
+Hop Limit       : 255                       Negotiated MTU       : 9178
+PathCompMethod  : local-cspf                
+FallbkPathComp  : not-applicable            
+Metric          : N/A                       Metric Type          : igp
+Local Sr Protec*: preferred                 Label Stack Reduction: Disabled
+Load Bal Wt     : N/A                       ClassForwarding      : Disabled
+Include Grps    :                           Exclude Grps         : 
+None                                           None
+Egress Stats    : Disabled                  
+ 
+Revert Timer    : Disabled                  Next Revert In       : N/A
+Entropy Label   : Enabled+                  Oper Entropy Label   : Enabled
+Negotiated EL   : Disabled                  
+VprnAutoBind    : Enabled                   
+IGP Shortcut    : Enabled                   BGP Shortcut         : Enabled
+IGP LFA         : Disabled                  IGP Rel Metric       : Disabled
+BGPTransTun     : Enabled                   
+Oper Metric     : 4                         
+PCE Report      : Disabled+                 
+PCE Control     : Disabled                  
+Max SR Labels   : 8                         Additional FRR Labels: 2
+Path Profile    : None                      
+Admin Tags      : None                      
+ 
+Primary(a)      : dyn
+                                            Up Time              : 0d 06:56:39
+Bandwidth       : 0 Mbps                    
+-------------------------------------------------------------------------------
+Type : Originating 
+-------------------------------------------------------------------------------
+LSP Name   : dyn_sr_te_lsp_to_R2-AGG2
+LSP Type        : SrTeLsp                   LSP Tunnel ID        : 2
+LSP Index       : 65537                     TTM Tunnel Id        : 655363
+From            : 10.250.88.4
+To              : 10.250.88.2
+Adm State       : Up                        Oper State           : Up
+LSP Up Time     : 0d 06:56:39               LSP Down Time        : 0d 00:00:00
+Transitions     : 1                         Path Changes         : 1
+Retry Limit     : 0                         Retry Timer          : 30 sec
+Hop Limit       : 255                       Negotiated MTU       : 9182
+PathCompMethod  : local-cspf                
+FallbkPathComp  : not-applicable            
+Metric          : N/A                       Metric Type          : igp
+Local Sr Protec*: preferred                 Label Stack Reduction: Disabled
+Load Bal Wt     : N/A                       ClassForwarding      : Disabled
+Include Grps    :                           Exclude Grps         : 
+None                                           None
+Egress Stats    : Disabled                  
+ 
+Revert Timer    : Disabled                  Next Revert In       : N/A
+Entropy Label   : Enabled+                  Oper Entropy Label   : Enabled
+Negotiated EL   : Disabled                  
+VprnAutoBind    : Enabled                   
+IGP Shortcut    : Enabled                   BGP Shortcut         : Enabled
+IGP LFA         : Disabled                  IGP Rel Metric       : Disabled
+BGPTransTun     : Enabled                   
+Oper Metric     : 2                         
+PCE Report      : Disabled+                 
+PCE Control     : Disabled                  
+Max SR Labels   : 8                         Additional FRR Labels: 2
+Path Profile    : None                      
+Admin Tags      : None                      
+ 
+Primary(a)      : dyn
+                                            Up Time              : 0d 06:56:39
+Bandwidth       : 0 Mbps                    
+-------------------------------------------------------------------------------
+Type : Originating 
+-------------------------------------------------------------------------------
+LSP Name   : dyn_sr_te_lsp_to_R3-CSG1
+LSP Type        : SrTeLsp                   LSP Tunnel ID        : 3
+LSP Index       : 65538                     TTM Tunnel Id        : 655364
+From            : 10.250.88.4
+To              : 10.250.88.3
+Adm State       : Up                        Oper State           : Up
+LSP Up Time     : 0d 06:56:39               LSP Down Time        : 0d 00:00:00
+Transitions     : 1                         Path Changes         : 1
+Retry Limit     : 0                         Retry Timer          : 30 sec
+Hop Limit       : 255                       Negotiated MTU       : 9182
+PathCompMethod  : local-cspf                
+FallbkPathComp  : not-applicable            
+Metric          : N/A                       Metric Type          : igp
+Local Sr Protec*: preferred                 Label Stack Reduction: Disabled
+Load Bal Wt     : N/A                       ClassForwarding      : Disabled
+Include Grps    :                           Exclude Grps         : 
+None                                           None
+Egress Stats    : Disabled                  
+ 
+Revert Timer    : Disabled                  Next Revert In       : N/A
+Entropy Label   : Enabled+                  Oper Entropy Label   : Enabled
+Negotiated EL   : Disabled                  
+VprnAutoBind    : Enabled                   
+IGP Shortcut    : Enabled                   BGP Shortcut         : Enabled
+IGP LFA         : Disabled                  IGP Rel Metric       : Disabled
+BGPTransTun     : Enabled                   
+Oper Metric     : 2                         
+PCE Report      : Disabled+                 
+PCE Control     : Disabled                  
+Max SR Labels   : 8                         Additional FRR Labels: 2
+Path Profile    : None                      
+Admin Tags      : None                      
+ 
+Primary(a)      : dyn
+                                            Up Time              : 0d 06:56:39
+Bandwidth       : 0 Mbps                    
+-------------------------------------------------------------------------------
+Type : Originating 
+-------------------------------------------------------------------------------
+LSP Name   : dyn_sr_te_lsp_to_R5-MTC1
+LSP Type        : SrTeLsp                   LSP Tunnel ID        : 4
+LSP Index       : 65539                     TTM Tunnel Id        : 655365
+From            : 10.250.88.4
+To              : 10.250.88.5
+Adm State       : Up                        Oper State           : Up
+LSP Up Time     : 0d 06:56:39               LSP Down Time        : 0d 00:00:00
+Transitions     : 1                         Path Changes         : 1
+Retry Limit     : 0                         Retry Timer          : 30 sec
+Hop Limit       : 255                       Negotiated MTU       : 9174
+PathCompMethod  : local-cspf                
+FallbkPathComp  : not-applicable            
+Metric          : N/A                       Metric Type          : igp
+Local Sr Protec*: preferred                 Label Stack Reduction: Disabled
+Load Bal Wt     : N/A                       ClassForwarding      : Disabled
+Include Grps    :                           Exclude Grps         : 
+None                                           None
+Egress Stats    : Disabled                  
+ 
+Revert Timer    : Disabled                  Next Revert In       : N/A
+Entropy Label   : Enabled+                  Oper Entropy Label   : Enabled
+Negotiated EL   : Disabled                  
+VprnAutoBind    : Enabled                   
+IGP Shortcut    : Enabled                   BGP Shortcut         : Enabled
+IGP LFA         : Disabled                  IGP Rel Metric       : Disabled
+BGPTransTun     : Enabled                   
+Oper Metric     : 6                         
+PCE Report      : Disabled+                 
+PCE Control     : Disabled                  
+Max SR Labels   : 8                         Additional FRR Labels: 2
+Path Profile    : None                      
+Admin Tags      : None                      
+ 
+Primary(a)      : dyn
+                                            Up Time              : 0d 06:56:39
+Bandwidth       : 0 Mbps                    
+-------------------------------------------------------------------------------
+Type : Originating 
+-------------------------------------------------------------------------------
+LSP Name   : dyn_sr_te_lsp_to_R6-MTC2
+LSP Type        : SrTeLsp                   LSP Tunnel ID        : 5
+LSP Index       : 65540                     TTM Tunnel Id        : 655366
+From            : 10.250.88.4
+To              : 10.250.88.6
+Adm State       : Up                        Oper State           : Up
+LSP Up Time     : 0d 06:56:39               LSP Down Time        : 0d 00:00:00
+Transitions     : 1                         Path Changes         : 1
+Retry Limit     : 0                         Retry Timer          : 30 sec
+Hop Limit       : 255                       Negotiated MTU       : 9178
+PathCompMethod  : local-cspf                
+FallbkPathComp  : not-applicable            
+Metric          : N/A                       Metric Type          : igp
+Local Sr Protec*: preferred                 Label Stack Reduction: Disabled
+Load Bal Wt     : N/A                       ClassForwarding      : Disabled
+Include Grps    :                           Exclude Grps         : 
+None                                           None
+Egress Stats    : Disabled                  
+ 
+Revert Timer    : Disabled                  Next Revert In       : N/A
+Entropy Label   : Enabled+                  Oper Entropy Label   : Enabled
+Negotiated EL   : Disabled                  
+VprnAutoBind    : Enabled                   
+IGP Shortcut    : Enabled                   BGP Shortcut         : Enabled
+IGP LFA         : Disabled                  IGP Rel Metric       : Disabled
+BGPTransTun     : Enabled                   
+Oper Metric     : 4                         
+PCE Report      : Disabled+                 
+PCE Control     : Disabled                  
+Max SR Labels   : 8                         Additional FRR Labels: 2
+Path Profile    : None                      
+Admin Tags      : None                      
+ 
+Primary(a)      : dyn
+                                            Up Time              : 0d 06:56:39
+Bandwidth       : 0 Mbps                    
+===============================================================================
+* indicates that the corresponding row element may have been truncated.
+
+
+show commands on Router R5-MTC1 at 2023-06-27 17:24:51.012411
+show router tunnel-table protocol sr-te
+
+===============================================================================
+IPv4 Tunnel Table (Router: Base)
+===============================================================================
+Destination           Owner     Encap TunnelId  Pref   Nexthop        Metric
+   Color                                                              
+-------------------------------------------------------------------------------
+10.250.88.1/32        sr-te     MPLS  655362    8      10.250.89.6    2
+10.250.88.2/32        sr-te     MPLS  655363    8      10.250.89.6    4
+10.250.88.3/32        sr-te     MPLS  655364    8      10.250.89.6    4
+10.250.88.3/32        sr-te     MPLS  655367    8      10.250.89.2    8
+10.250.88.4/32        sr-te     MPLS  655365    8      10.250.89.6    6
+10.250.88.6/32        sr-te     MPLS  655366    8      10.250.89.2    2
+-------------------------------------------------------------------------------
+Flags: B = BGP or MPLS backup hop available
+       L = Loop-Free Alternate (LFA) hop available
+       E = Inactive best-external BGP route
+       k = RIB-API or Forwarding Policy backup hop
+===============================================================================
+show router fp-tunnel-table 1 protocol sr-te
+
+===============================================================================
+IPv4 Tunnel Table Display
+
+Legend: 
+label stack is ordered from bottom-most to top-most
+B - FRR Backup
+===============================================================================
+Destination                                  Protocol            Tunnel-ID
+  Lbl/SID                                                         
+    NextHop                                                      Intf/Tunnel
+  Lbl/SID (backup)                                               
+    NextHop   (backup)                                           
+-------------------------------------------------------------------------------
+10.250.88.1/32                               SR-TE                655362
+  3
+    10.250.89.6                                                   SR
+10.250.88.2/32                               SR-TE                655363
+  524286
+    10.250.89.6                                                   SR
+10.250.88.3/32                               SR-TE                655364
+  524285
+    10.250.89.6                                                   SR
+10.250.88.3/32                               SR-TE                655367
+  524286/524285/524286
+    10.250.89.2                                                   SR
+10.250.88.4/32                               SR-TE                655365
+  524285/524286
+    10.250.89.6                                                   SR
+10.250.88.6/32                               SR-TE                655366
+  3
+    10.250.89.2                                                   SR
+-------------------------------------------------------------------------------
+Total Entries : 6
+-------------------------------------------------------------------------------
+===============================================================================
+show router mpls sr-te-lsp
+
+===============================================================================
+MPLS SR-TE LSPs (Originating)
+===============================================================================
+LSP Name                                            Tun     Protect   Adm  Opr
+  To                                                Id      Path           
+-------------------------------------------------------------------------------
+dyn_sr_te_lsp_to_R1-AGG1                            1       N/A       Up   Up
+  10.250.88.1                                                              
+dyn_sr_te_lsp_to_R2-AGG2                            2       N/A       Up   Up
+  10.250.88.2                                                              
+dyn_sr_te_lsp_to_R3-CSG1                            3       N/A       Up   Up
+  10.250.88.3                                                              
+dyn_sr_te_lsp_to_R4-CSG2                            4       N/A       Up   Up
+  10.250.88.4                                                              
+dyn_sr_te_lsp_to_R6-MTC2                            5       N/A       Up   Up
+  10.250.88.6                                                              
+strict_sr_te_lsp_R5_R6_R2_R4_R3                     6       N/A       Up   Up
+  10.250.88.3                                                              
+-------------------------------------------------------------------------------
+LSPs : 6
+===============================================================================
+show router mpls sr-te-lsp detail
+
+===============================================================================
+MPLS SR-TE LSPs (Originating) (Detail)
+===============================================================================
+Legend : 
+    + - Inherited
+===============================================================================
+-------------------------------------------------------------------------------
+Type : Originating 
+-------------------------------------------------------------------------------
+LSP Name   : dyn_sr_te_lsp_to_R1-AGG1
+LSP Type        : SrTeLsp                   LSP Tunnel ID        : 1
+LSP Index       : 65536                     TTM Tunnel Id        : 655362
+From            : 10.250.88.5
+To              : 10.250.88.1
+Adm State       : Up                        Oper State           : Up
+LSP Up Time     : 0d 06:56:37               LSP Down Time        : 0d 00:00:00
+Transitions     : 1                         Path Changes         : 1
+Retry Limit     : 0                         Retry Timer          : 30 sec
+Hop Limit       : 255                       Negotiated MTU       : 9182
+PathCompMethod  : local-cspf                
+FallbkPathComp  : not-applicable            
+Metric          : N/A                       Metric Type          : igp
+Local Sr Protec*: preferred                 Label Stack Reduction: Disabled
+Load Bal Wt     : N/A                       ClassForwarding      : Disabled
+Include Grps    :                           Exclude Grps         : 
+None                                           None
+Egress Stats    : Disabled                  
+ 
+Revert Timer    : Disabled                  Next Revert In       : N/A
+Entropy Label   : Enabled+                  Oper Entropy Label   : Enabled
+Negotiated EL   : Disabled                  
+VprnAutoBind    : Enabled                   
+IGP Shortcut    : Enabled                   BGP Shortcut         : Enabled
+IGP LFA         : Disabled                  IGP Rel Metric       : Disabled
+BGPTransTun     : Enabled                   
+Oper Metric     : 2                         
+PCE Report      : Disabled+                 
+PCE Control     : Disabled                  
+Max SR Labels   : 8                         Additional FRR Labels: 2
+Path Profile    : None                      
+Admin Tags      : None                      
+ 
+Primary(a)      : dyn
+                                            Up Time              : 0d 06:56:37
+Bandwidth       : 0 Mbps                    
+-------------------------------------------------------------------------------
+Type : Originating 
+-------------------------------------------------------------------------------
+LSP Name   : dyn_sr_te_lsp_to_R2-AGG2
+LSP Type        : SrTeLsp                   LSP Tunnel ID        : 2
+LSP Index       : 65537                     TTM Tunnel Id        : 655363
+From            : 10.250.88.5
+To              : 10.250.88.2
+Adm State       : Up                        Oper State           : Up
+LSP Up Time     : 0d 06:56:37               LSP Down Time        : 0d 00:00:00
+Transitions     : 1                         Path Changes         : 1
+Retry Limit     : 0                         Retry Timer          : 30 sec
+Hop Limit       : 255                       Negotiated MTU       : 9178
+PathCompMethod  : local-cspf                
+FallbkPathComp  : not-applicable            
+Metric          : N/A                       Metric Type          : igp
+Local Sr Protec*: preferred                 Label Stack Reduction: Disabled
+Load Bal Wt     : N/A                       ClassForwarding      : Disabled
+Include Grps    :                           Exclude Grps         : 
+None                                           None
+Egress Stats    : Disabled                  
+ 
+Revert Timer    : Disabled                  Next Revert In       : N/A
+Entropy Label   : Enabled+                  Oper Entropy Label   : Enabled
+Negotiated EL   : Disabled                  
+VprnAutoBind    : Enabled                   
+IGP Shortcut    : Enabled                   BGP Shortcut         : Enabled
+IGP LFA         : Disabled                  IGP Rel Metric       : Disabled
+BGPTransTun     : Enabled                   
+Oper Metric     : 4                         
+PCE Report      : Disabled+                 
+PCE Control     : Disabled                  
+Max SR Labels   : 8                         Additional FRR Labels: 2
+Path Profile    : None                      
+Admin Tags      : None                      
+ 
+Primary(a)      : dyn
+                                            Up Time              : 0d 06:56:38
+Bandwidth       : 0 Mbps                    
+-------------------------------------------------------------------------------
+Type : Originating 
+-------------------------------------------------------------------------------
+LSP Name   : dyn_sr_te_lsp_to_R3-CSG1
+LSP Type        : SrTeLsp                   LSP Tunnel ID        : 3
+LSP Index       : 65538                     TTM Tunnel Id        : 655364
+From            : 10.250.88.5
+To              : 10.250.88.3
+Adm State       : Up                        Oper State           : Up
+LSP Up Time     : 0d 06:56:38               LSP Down Time        : 0d 00:00:00
+Transitions     : 1                         Path Changes         : 1
+Retry Limit     : 0                         Retry Timer          : 30 sec
+Hop Limit       : 255                       Negotiated MTU       : 9178
+PathCompMethod  : local-cspf                
+FallbkPathComp  : not-applicable            
+Metric          : N/A                       Metric Type          : igp
+Local Sr Protec*: preferred                 Label Stack Reduction: Disabled
+Load Bal Wt     : N/A                       ClassForwarding      : Disabled
+Include Grps    :                           Exclude Grps         : 
+None                                           None
+Egress Stats    : Disabled                  
+ 
+Revert Timer    : Disabled                  Next Revert In       : N/A
+Entropy Label   : Enabled+                  Oper Entropy Label   : Enabled
+Negotiated EL   : Disabled                  
+VprnAutoBind    : Enabled                   
+IGP Shortcut    : Enabled                   BGP Shortcut         : Enabled
+IGP LFA         : Disabled                  IGP Rel Metric       : Disabled
+BGPTransTun     : Enabled                   
+Oper Metric     : 4                         
+PCE Report      : Disabled+                 
+PCE Control     : Disabled                  
+Max SR Labels   : 8                         Additional FRR Labels: 2
+Path Profile    : None                      
+Admin Tags      : None                      
+ 
+Primary(a)      : dyn
+                                            Up Time              : 0d 06:56:38
+Bandwidth       : 0 Mbps                    
+-------------------------------------------------------------------------------
+Type : Originating 
+-------------------------------------------------------------------------------
+LSP Name   : dyn_sr_te_lsp_to_R4-CSG2
+LSP Type        : SrTeLsp                   LSP Tunnel ID        : 4
+LSP Index       : 65539                     TTM Tunnel Id        : 655365
+From            : 10.250.88.5
+To              : 10.250.88.4
+Adm State       : Up                        Oper State           : Up
+LSP Up Time     : 0d 06:56:38               LSP Down Time        : 0d 00:00:00
+Transitions     : 1                         Path Changes         : 1
+Retry Limit     : 0                         Retry Timer          : 30 sec
+Hop Limit       : 255                       Negotiated MTU       : 9174
+PathCompMethod  : local-cspf                
+FallbkPathComp  : not-applicable            
+Metric          : N/A                       Metric Type          : igp
+Local Sr Protec*: preferred                 Label Stack Reduction: Disabled
+Load Bal Wt     : N/A                       ClassForwarding      : Disabled
+Include Grps    :                           Exclude Grps         : 
+None                                           None
+Egress Stats    : Disabled                  
+ 
+Revert Timer    : Disabled                  Next Revert In       : N/A
+Entropy Label   : Enabled+                  Oper Entropy Label   : Enabled
+Negotiated EL   : Disabled                  
+VprnAutoBind    : Enabled                   
+IGP Shortcut    : Enabled                   BGP Shortcut         : Enabled
+IGP LFA         : Disabled                  IGP Rel Metric       : Disabled
+BGPTransTun     : Enabled                   
+Oper Metric     : 6                         
+PCE Report      : Disabled+                 
+PCE Control     : Disabled                  
+Max SR Labels   : 8                         Additional FRR Labels: 2
+Path Profile    : None                      
+Admin Tags      : None                      
+ 
+Primary(a)      : dyn
+                                            Up Time              : 0d 06:56:38
+Bandwidth       : 0 Mbps                    
+-------------------------------------------------------------------------------
+Type : Originating 
+-------------------------------------------------------------------------------
+LSP Name   : dyn_sr_te_lsp_to_R6-MTC2
+LSP Type        : SrTeLsp                   LSP Tunnel ID        : 5
+LSP Index       : 65540                     TTM Tunnel Id        : 655366
+From            : 10.250.88.5
+To              : 10.250.88.6
+Adm State       : Up                        Oper State           : Up
+LSP Up Time     : 0d 06:56:38               LSP Down Time        : 0d 00:00:00
+Transitions     : 1                         Path Changes         : 1
+Retry Limit     : 0                         Retry Timer          : 30 sec
+Hop Limit       : 255                       Negotiated MTU       : 9182
+PathCompMethod  : local-cspf                
+FallbkPathComp  : not-applicable            
+Metric          : N/A                       Metric Type          : igp
+Local Sr Protec*: preferred                 Label Stack Reduction: Disabled
+Load Bal Wt     : N/A                       ClassForwarding      : Disabled
+Include Grps    :                           Exclude Grps         : 
+None                                           None
+Egress Stats    : Disabled                  
+ 
+Revert Timer    : Disabled                  Next Revert In       : N/A
+Entropy Label   : Enabled+                  Oper Entropy Label   : Enabled
+Negotiated EL   : Disabled                  
+VprnAutoBind    : Enabled                   
+IGP Shortcut    : Enabled                   BGP Shortcut         : Enabled
+IGP LFA         : Disabled                  IGP Rel Metric       : Disabled
+BGPTransTun     : Enabled                   
+Oper Metric     : 2                         
+PCE Report      : Disabled+                 
+PCE Control     : Disabled                  
+Max SR Labels   : 8                         Additional FRR Labels: 2
+Path Profile    : None                      
+Admin Tags      : None                      
+ 
+Primary(a)      : dyn
+                                            Up Time              : 0d 06:56:38
+Bandwidth       : 0 Mbps                    
+-------------------------------------------------------------------------------
+Type : Originating 
+-------------------------------------------------------------------------------
+LSP Name   : strict_sr_te_lsp_R5_R6_R2_R4_R3
+LSP Type        : SrTeLsp                   LSP Tunnel ID        : 6
+LSP Index       : 65541                     TTM Tunnel Id        : 655367
+From            : 10.250.88.5
+To              : 10.250.88.3
+Adm State       : Up                        Oper State           : Up
+LSP Up Time     : 0d 02:07:24               LSP Down Time        : 0d 00:00:00
+Transitions     : 1                         Path Changes         : 1
+Retry Limit     : 0                         Retry Timer          : 30 sec
+Hop Limit       : 255                       Negotiated MTU       : 9170
+PathCompMethod  : local-cspf                
+FallbkPathComp  : not-applicable            
+Metric          : N/A                       Metric Type          : igp
+Local Sr Protec*: preferred                 Label Stack Reduction: Disabled
+Load Bal Wt     : N/A                       ClassForwarding      : Disabled
+Include Grps    :                           Exclude Grps         : 
+None                                           None
+Egress Stats    : Disabled                  
+ 
+Revert Timer    : Disabled                  Next Revert In       : N/A
+Entropy Label   : Enabled+                  Oper Entropy Label   : Enabled
+Negotiated EL   : Disabled                  
+VprnAutoBind    : Enabled                   
+IGP Shortcut    : Enabled                   BGP Shortcut         : Enabled
+IGP LFA         : Disabled                  IGP Rel Metric       : Disabled
+BGPTransTun     : Enabled                   
+Oper Metric     : 8                         
+PCE Report      : Disabled+                 
+PCE Control     : Disabled                  
+Max SR Labels   : 8                         Additional FRR Labels: 2
+Path Profile    : None                      
+Admin Tags      : None                      
+ 
+Primary(a)      : strict_path_R5_R6_R2_R4_R3
+                                            Up Time              : 0d 02:07:24
+Bandwidth       : 0 Mbps                    
+===============================================================================
+* indicates that the corresponding row element may have been truncated.
+
+
+show commands on Router R6-MTC2 at 2023-06-27 17:24:54.300104
+show router tunnel-table protocol sr-te
+
+===============================================================================
+IPv4 Tunnel Table (Router: Base)
+===============================================================================
+Destination           Owner     Encap TunnelId  Pref   Nexthop        Metric
+   Color                                                              
+-------------------------------------------------------------------------------
+10.250.88.1/32        sr-te     MPLS  655362    8      10.250.89.1    4
+10.250.88.2/32        sr-te     MPLS  655363    8      10.250.89.10   2
+10.250.88.3/32        sr-te     MPLS  655364    8      10.250.89.1    6
+10.250.88.4/32        sr-te     MPLS  655365    8      10.250.89.10   4
+10.250.88.5/32        sr-te     MPLS  655366    8      10.250.89.1    2
+-------------------------------------------------------------------------------
+Flags: B = BGP or MPLS backup hop available
+       L = Loop-Free Alternate (LFA) hop available
+       E = Inactive best-external BGP route
+       k = RIB-API or Forwarding Policy backup hop
+===============================================================================
+show router fp-tunnel-table 1 protocol sr-te
+
+===============================================================================
+IPv4 Tunnel Table Display
+
+Legend: 
+label stack is ordered from bottom-most to top-most
+B - FRR Backup
+===============================================================================
+Destination                                  Protocol            Tunnel-ID
+  Lbl/SID                                                         
+    NextHop                                                      Intf/Tunnel
+  Lbl/SID (backup)                                               
+    NextHop   (backup)                                           
+-------------------------------------------------------------------------------
+10.250.88.1/32                               SR-TE                655362
+  524286
+    10.250.89.1                                                   SR
+10.250.88.2/32                               SR-TE                655363
+  3
+    10.250.89.10                                                  SR
+10.250.88.3/32                               SR-TE                655364
+  524285/524286
+    10.250.89.1                                                   SR
+10.250.88.4/32                               SR-TE                655365
+  524285
+    10.250.89.10                                                  SR
+10.250.88.5/32                               SR-TE                655366
+  3
+    10.250.89.1                                                   SR
+-------------------------------------------------------------------------------
+Total Entries : 5
+-------------------------------------------------------------------------------
+===============================================================================
+show router mpls sr-te-lsp
+
+===============================================================================
+MPLS SR-TE LSPs (Originating)
+===============================================================================
+LSP Name                                            Tun     Protect   Adm  Opr
+  To                                                Id      Path           
+-------------------------------------------------------------------------------
+dyn_sr_te_lsp_to_R1-AGG1                            1       N/A       Up   Up
+  10.250.88.1                                                              
+dyn_sr_te_lsp_to_R2-AGG2                            2       N/A       Up   Up
+  10.250.88.2                                                              
+dyn_sr_te_lsp_to_R3-CSG1                            3       N/A       Up   Up
+  10.250.88.3                                                              
+dyn_sr_te_lsp_to_R4-CSG2                            4       N/A       Up   Up
+  10.250.88.4                                                              
+dyn_sr_te_lsp_to_R5-MTC1                            5       N/A       Up   Up
+  10.250.88.5                                                              
+-------------------------------------------------------------------------------
+LSPs : 5
+===============================================================================
+show router mpls sr-te-lsp detail
+
+===============================================================================
+MPLS SR-TE LSPs (Originating) (Detail)
+===============================================================================
+Legend : 
+    + - Inherited
+===============================================================================
+-------------------------------------------------------------------------------
+Type : Originating 
+-------------------------------------------------------------------------------
+LSP Name   : dyn_sr_te_lsp_to_R1-AGG1
+LSP Type        : SrTeLsp                   LSP Tunnel ID        : 1
+LSP Index       : 65536                     TTM Tunnel Id        : 655362
+From            : 10.250.88.6
+To              : 10.250.88.1
+Adm State       : Up                        Oper State           : Up
+LSP Up Time     : 0d 06:56:36               LSP Down Time        : 0d 00:00:00
+Transitions     : 1                         Path Changes         : 1
+Retry Limit     : 0                         Retry Timer          : 30 sec
+Hop Limit       : 255                       Negotiated MTU       : 9178
+PathCompMethod  : local-cspf                
+FallbkPathComp  : not-applicable            
+Metric          : N/A                       Metric Type          : igp
+Local Sr Protec*: preferred                 Label Stack Reduction: Disabled
+Load Bal Wt     : N/A                       ClassForwarding      : Disabled
+Include Grps    :                           Exclude Grps         : 
+None                                           None
+Egress Stats    : Disabled                  
+ 
+Revert Timer    : Disabled                  Next Revert In       : N/A
+Entropy Label   : Enabled+                  Oper Entropy Label   : Enabled
+Negotiated EL   : Disabled                  
+VprnAutoBind    : Enabled                   
+IGP Shortcut    : Enabled                   BGP Shortcut         : Enabled
+IGP LFA         : Disabled                  IGP Rel Metric       : Disabled
+BGPTransTun     : Enabled                   
+Oper Metric     : 4                         
+PCE Report      : Disabled+                 
+PCE Control     : Disabled                  
+Max SR Labels   : 8                         Additional FRR Labels: 2
+Path Profile    : None                      
+Admin Tags      : None                      
+ 
+Primary(a)      : dyn
+                                            Up Time              : 0d 06:56:36
+Bandwidth       : 0 Mbps                    
+-------------------------------------------------------------------------------
+Type : Originating 
+-------------------------------------------------------------------------------
+LSP Name   : dyn_sr_te_lsp_to_R2-AGG2
+LSP Type        : SrTeLsp                   LSP Tunnel ID        : 2
+LSP Index       : 65537                     TTM Tunnel Id        : 655363
+From            : 10.250.88.6
+To              : 10.250.88.2
+Adm State       : Up                        Oper State           : Up
+LSP Up Time     : 0d 06:56:36               LSP Down Time        : 0d 00:00:00
+Transitions     : 1                         Path Changes         : 1
+Retry Limit     : 0                         Retry Timer          : 30 sec
+Hop Limit       : 255                       Negotiated MTU       : 9182
+PathCompMethod  : local-cspf                
+FallbkPathComp  : not-applicable            
+Metric          : N/A                       Metric Type          : igp
+Local Sr Protec*: preferred                 Label Stack Reduction: Disabled
+Load Bal Wt     : N/A                       ClassForwarding      : Disabled
+Include Grps    :                           Exclude Grps         : 
+None                                           None
+Egress Stats    : Disabled                  
+ 
+Revert Timer    : Disabled                  Next Revert In       : N/A
+Entropy Label   : Enabled+                  Oper Entropy Label   : Enabled
+Negotiated EL   : Disabled                  
+VprnAutoBind    : Enabled                   
+IGP Shortcut    : Enabled                   BGP Shortcut         : Enabled
+IGP LFA         : Disabled                  IGP Rel Metric       : Disabled
+BGPTransTun     : Enabled                   
+Oper Metric     : 2                         
+PCE Report      : Disabled+                 
+PCE Control     : Disabled                  
+Max SR Labels   : 8                         Additional FRR Labels: 2
+Path Profile    : None                      
+Admin Tags      : None                      
+ 
+Primary(a)      : dyn
+                                            Up Time              : 0d 06:56:36
+Bandwidth       : 0 Mbps                    
+-------------------------------------------------------------------------------
+Type : Originating 
+-------------------------------------------------------------------------------
+LSP Name   : dyn_sr_te_lsp_to_R3-CSG1
+LSP Type        : SrTeLsp                   LSP Tunnel ID        : 3
+LSP Index       : 65538                     TTM Tunnel Id        : 655364
+From            : 10.250.88.6
+To              : 10.250.88.3
+Adm State       : Up                        Oper State           : Up
+LSP Up Time     : 0d 06:56:36               LSP Down Time        : 0d 00:00:00
+Transitions     : 1                         Path Changes         : 1
+Retry Limit     : 0                         Retry Timer          : 30 sec
+Hop Limit       : 255                       Negotiated MTU       : 9174
+PathCompMethod  : local-cspf                
+FallbkPathComp  : not-applicable            
+Metric          : N/A                       Metric Type          : igp
+Local Sr Protec*: preferred                 Label Stack Reduction: Disabled
+Load Bal Wt     : N/A                       ClassForwarding      : Disabled
+Include Grps    :                           Exclude Grps         : 
+None                                           None
+Egress Stats    : Disabled                  
+ 
+Revert Timer    : Disabled                  Next Revert In       : N/A
+Entropy Label   : Enabled+                  Oper Entropy Label   : Enabled
+Negotiated EL   : Disabled                  
+VprnAutoBind    : Enabled                   
+IGP Shortcut    : Enabled                   BGP Shortcut         : Enabled
+IGP LFA         : Disabled                  IGP Rel Metric       : Disabled
+BGPTransTun     : Enabled                   
+Oper Metric     : 6                         
+PCE Report      : Disabled+                 
+PCE Control     : Disabled                  
+Max SR Labels   : 8                         Additional FRR Labels: 2
+Path Profile    : None                      
+Admin Tags      : None                      
+ 
+Primary(a)      : dyn
+                                            Up Time              : 0d 06:56:36
+Bandwidth       : 0 Mbps                    
+-------------------------------------------------------------------------------
+Type : Originating 
+-------------------------------------------------------------------------------
+LSP Name   : dyn_sr_te_lsp_to_R4-CSG2
+LSP Type        : SrTeLsp                   LSP Tunnel ID        : 4
+LSP Index       : 65539                     TTM Tunnel Id        : 655365
+From            : 10.250.88.6
+To              : 10.250.88.4
+Adm State       : Up                        Oper State           : Up
+LSP Up Time     : 0d 06:56:36               LSP Down Time        : 0d 00:00:00
+Transitions     : 1                         Path Changes         : 1
+Retry Limit     : 0                         Retry Timer          : 30 sec
+Hop Limit       : 255                       Negotiated MTU       : 9178
+PathCompMethod  : local-cspf                
+FallbkPathComp  : not-applicable            
+Metric          : N/A                       Metric Type          : igp
+Local Sr Protec*: preferred                 Label Stack Reduction: Disabled
+Load Bal Wt     : N/A                       ClassForwarding      : Disabled
+Include Grps    :                           Exclude Grps         : 
+None                                           None
+Egress Stats    : Disabled                  
+ 
+Revert Timer    : Disabled                  Next Revert In       : N/A
+Entropy Label   : Enabled+                  Oper Entropy Label   : Enabled
+Negotiated EL   : Disabled                  
+VprnAutoBind    : Enabled                   
+IGP Shortcut    : Enabled                   BGP Shortcut         : Enabled
+IGP LFA         : Disabled                  IGP Rel Metric       : Disabled
+BGPTransTun     : Enabled                   
+Oper Metric     : 4                         
+PCE Report      : Disabled+                 
+PCE Control     : Disabled                  
+Max SR Labels   : 8                         Additional FRR Labels: 2
+Path Profile    : None                      
+Admin Tags      : None                      
+ 
+Primary(a)      : dyn
+                                            Up Time              : 0d 06:56:36
+Bandwidth       : 0 Mbps                    
+-------------------------------------------------------------------------------
+Type : Originating 
+-------------------------------------------------------------------------------
+LSP Name   : dyn_sr_te_lsp_to_R5-MTC1
+LSP Type        : SrTeLsp                   LSP Tunnel ID        : 5
+LSP Index       : 65540                     TTM Tunnel Id        : 655366
+From            : 10.250.88.6
+To              : 10.250.88.5
+Adm State       : Up                        Oper State           : Up
+LSP Up Time     : 0d 06:56:36               LSP Down Time        : 0d 00:00:00
+Transitions     : 1                         Path Changes         : 1
+Retry Limit     : 0                         Retry Timer          : 30 sec
+Hop Limit       : 255                       Negotiated MTU       : 9182
+PathCompMethod  : local-cspf                
+FallbkPathComp  : not-applicable            
+Metric          : N/A                       Metric Type          : igp
+Local Sr Protec*: preferred                 Label Stack Reduction: Disabled
+Load Bal Wt     : N/A                       ClassForwarding      : Disabled
+Include Grps    :                           Exclude Grps         : 
+None                                           None
+Egress Stats    : Disabled                  
+ 
+Revert Timer    : Disabled                  Next Revert In       : N/A
+Entropy Label   : Enabled+                  Oper Entropy Label   : Enabled
+Negotiated EL   : Disabled                  
+VprnAutoBind    : Enabled                   
+IGP Shortcut    : Enabled                   BGP Shortcut         : Enabled
+IGP LFA         : Disabled                  IGP Rel Metric       : Disabled
+BGPTransTun     : Enabled                   
+Oper Metric     : 2                         
+PCE Report      : Disabled+                 
+PCE Control     : Disabled                  
+Max SR Labels   : 8                         Additional FRR Labels: 2
+Path Profile    : None                      
+Admin Tags      : None                      
+ 
+Primary(a)      : dyn
+                                            Up Time              : 0d 06:56:36
+Bandwidth       : 0 Mbps                    
+===============================================================================
+* indicates that the corresponding row element may have been truncated.
+
+

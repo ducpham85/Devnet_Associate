@@ -1,0 +1,5 @@
+show router tunnel-table protocol sr-te
+show router fp-tunnel-table 1 protocol sr-te
+show router mpls sr-te-lsp
+show router mpls sr-te-lsp detail
+ 

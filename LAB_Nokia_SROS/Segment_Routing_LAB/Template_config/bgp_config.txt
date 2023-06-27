@@ -1,0 +1,34 @@
+configure router bgp
+            vpn-apply-export
+            min-route-advertisement 2 
+            multi-path
+                maximum-paths 2
+            exit
+            local-as 65333
+            enable-peer-tracking
+            rapid-withdrawal
+            backup-path ipv4
+            next-hop-resolution
+                labeled-routes
+                    transport-tunnel
+                        family vpn
+                            resolution-filter
+                                ldp
+                                rsvp
+                                bgp
+								sr-ospf
+                            exit
+                            resolution filter
+                        exit
+                        family label-ipv4
+                            resolution-filter
+                                ldp
+                                rsvp
+								sr-ospf
+                            exit
+                            resolution filter
+                        exit
+                    exit
+                exit
+            exit
+            enable-rr-vpn-forwarding

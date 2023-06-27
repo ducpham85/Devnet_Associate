@@ -1,0 +1,10 @@
+/configure service vprn {vprn_id} customer 1 create 
+/configure service vprn {vprn_id} vrf-target target:65333:{vprn_id}
+/configure service vprn {vprn_id} interface lo1 create
+/configure service vprn {vprn_id} interface lo1 loopback
+/configure service vprn {vprn_id} auto-bind-tunnel resolution filter
+/configure service vprn {vprn_id} auto-bind-tunnel resolution-filter sr-te
+/configure service vprn {vprn_id} no shutdown
+/configure service vprn {vprn_id} route-distinguisher {sys_ip}:{vprn_id}
+/configure service vprn {vprn_id} interface lo1 create address {vprn_id}.{vprn_id}.{vprn_id}.{node_id}/32
+/configure service vprn {vprn_id} bgp-ipvpn mpls no shutdown

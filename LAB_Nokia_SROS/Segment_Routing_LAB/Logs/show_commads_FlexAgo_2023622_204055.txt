@@ -1,0 +1,2956 @@
+show commands on Router R1-AGG1 at 2023-06-22 20:40:55.233586
+show router flexible-algorithm-definitions
+
+===============================================================================
+Flexible Algorithm Definitions
+===============================================================================
+-------------------------------------------------------------------------------
+Flex-Algo: FlexAgo_delay
+-------------------------------------------------------------------------------
+Admin State   : Up
+Description   : (Not Specified)
+Flags TLV     : Enabled
+Metric Type   : delay
+Priority      : 100
+Exclude       : N.A.
+Include Any   : N.A.
+Include All   : N.A.
+===============================================================================
+show router ospf flex-algo
+
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Flex-Algos 
+===============================================================================
+Flex-Algo Area             Advertising Participating Num      Selected FAD
+                                                     FADs     Owner (Router-Id)
+-------------------------------------------------------------------------------
+129       0.0.0.0          Yes         Yes           6        10.250.88.6
+-------------------------------------------------------------------------------
+FAD: Flexible Algorithm Definition
+-------------------------------------------------------------------------------
+No. of Flex-Algos: 1 (1 unique)
+===============================================================================
+show router ospf flex-algo detail
+
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Flex-Algos (detail)
+===============================================================================
+-------------------------------------------------------------------------------
+Flex-Algo : 129
+-------------------------------------------------------------------------------
+Advertising FAD         : FlexAgo_delay
+Participating           : Yes
+Loop-Free-Alternate     : Disabled
+Oper state
+  Area 0.0.0.0          : UP
+
+Displaying Area 0.0.0.0 FAD Info
+-------------------------------------------------------------------------------
+FADs-count              : 6
+Selected FAD
+  Fad-Owner             : 10.250.88.6
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+Other FADs
+  Fad-Owner             : 10.250.88.1
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+  Fad-Owner             : 10.250.88.2
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+  Fad-Owner             : 10.250.88.3
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+  Fad-Owner             : 10.250.88.4
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+  Fad-Owner             : 10.250.88.5
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+-------------------------------------------------------------------------------
+FAD: Flexible Algorithm Definition
+Fad Flags:   M = Prefix Metric
+===============================================================================
+show router ospf sid-stats node
+
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Sid Statistics
+===============================================================================
+Ingress Label     : 100001              Type              : node
+Prefix            : 10.250.88.1/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100002              Type              : node
+Prefix            : 10.250.88.2/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100003              Type              : node
+Prefix            : 10.250.88.3/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100004              Type              : node
+Prefix            : 10.250.88.4/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100005              Type              : node
+Prefix            : 10.250.88.5/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100006              Type              : node
+Prefix            : 10.250.88.6/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100101              Type              : node
+Prefix            : 10.250.88.1/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100102              Type              : node
+Prefix            : 10.250.88.2/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100103              Type              : node
+Prefix            : 10.250.88.3/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100104              Type              : node
+Prefix            : 10.250.88.4/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100105              Type              : node
+Prefix            : 10.250.88.5/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100106              Type              : node
+Prefix            : 10.250.88.6/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+-------------------------------------------------------------------------------
+Sid count : 12
+===============================================================================
+show router tunnel-table
+
+===============================================================================
+IPv4 Tunnel Table (Router: Base)
+===============================================================================
+Destination           Owner     Encap TunnelId  Pref   Nexthop        Metric
+   Color                                                              
+-------------------------------------------------------------------------------
+10.250.88.2/32        ldp       MPLS  65537     9      10.250.89.14   2
+10.250.88.2/32 [L]    ospf (0)  MPLS  524292    10     10.250.89.14   2
+10.250.88.2/32        ospf (0)  MPLS  524298    10     10.250.89.14   100
+10.250.88.3/32        ldp       MPLS  65538     9      10.250.94.18   2
+10.250.88.3/32 [L]    ospf (0)  MPLS  524293    10     10.250.94.18   2
+10.250.88.3/32        ospf (0)  MPLS  524299    10     10.250.89.14   300
+10.250.88.4/32        ldp       MPLS  65539     9      10.250.89.14   4
+10.250.88.4/32        ldp       MPLS  65539     9      10.250.94.18   4
+10.250.88.4/32        ospf (0)  MPLS  524294    10     10.250.89.14   4
+10.250.88.4/32        ospf (0)  MPLS  524294    10     10.250.94.18   4
+10.250.88.4/32        ospf (0)  MPLS  524300    10     10.250.89.14   200
+10.250.88.5/32        ldp       MPLS  65540     9      10.250.89.5    2
+10.250.88.5/32 [L]    ospf (0)  MPLS  524295    10     10.250.89.5    2
+10.250.88.5/32        ospf (0)  MPLS  524297    10     10.250.89.14   300
+10.250.88.6/32        ldp       MPLS  65541     9      10.250.89.5    4
+10.250.88.6/32        ldp       MPLS  65541     9      10.250.89.14   4
+10.250.88.6/32        ospf (0)  MPLS  524296    10     10.250.89.14   4
+10.250.88.6/32        ospf (0)  MPLS  524296    10     10.250.89.5    4
+10.250.88.6/32        ospf (0)  MPLS  524301    10     10.250.89.14   200
+10.250.89.5/32 [L]    ospf (0)  MPLS  524291    10     10.250.89.5    0
+10.250.89.14/32 [L]   ospf (0)  MPLS  524289    10     10.250.89.14   0
+10.250.94.18/32 [L]   ospf (0)  MPLS  524290    10     10.250.94.18   0
+-------------------------------------------------------------------------------
+Flags: B = BGP or MPLS backup hop available
+       L = Loop-Free Alternate (LFA) hop available
+       E = Inactive best-external BGP route
+       k = RIB-API or Forwarding Policy backup hop
+===============================================================================
+show router tunnel-table protocol ospf detail
+
+===============================================================================
+Tunnel Table (Router: Base)
+===============================================================================
+Destination      : 10.250.88.2/32 [L]
+NextHop          : 10.250.89.14
+Tunnel Flags     : has-lfa entropy-label-capable
+Age              : 02h40m43s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524292               Preference       : 10
+Tunnel Label     : 100002               Tunnel Metric    : 2
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.2/32
+NextHop          : 10.250.89.14
+Tunnel Flags     : entropy-label-capable
+Age              : 02h30m14s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Algorithm        : 129                  
+Tunnel ID        : 524298               Preference       : 10
+Tunnel Label     : 100102               Tunnel Metric    : 100
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.3/32 [L]
+NextHop          : 10.250.94.18
+Tunnel Flags     : has-lfa entropy-label-capable
+Age              : 02h40m38s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524293               Preference       : 10
+Tunnel Label     : 100003               Tunnel Metric    : 2
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.3/32
+NextHop          : 10.250.89.14
+Tunnel Flags     : entropy-label-capable
+Age              : 02h03m26s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Algorithm        : 129                  
+Tunnel ID        : 524299               Preference       : 10
+Tunnel Label     : 100103               Tunnel Metric    : 300
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.4/32
+NextHop          : 10.250.89.14
+Tunnel Flags     : entropy-label-capable
+Age              : 02h40m30s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524294               Preference       : 10
+Tunnel Label     : 100004               Tunnel Metric    : 4
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.4/32
+NextHop          : 10.250.94.18
+Tunnel Flags     : entropy-label-capable
+Age              : 02h40m30s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524294               Preference       : 10
+Tunnel Label     : 100004               Tunnel Metric    : 4
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.4/32
+NextHop          : 10.250.89.14
+Tunnel Flags     : entropy-label-capable
+Age              : 02h06m48s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Algorithm        : 129                  
+Tunnel ID        : 524300               Preference       : 10
+Tunnel Label     : 100104               Tunnel Metric    : 200
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.5/32 [L]
+NextHop          : 10.250.89.5
+Tunnel Flags     : has-lfa entropy-label-capable
+Age              : 02h40m25s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524295               Preference       : 10
+Tunnel Label     : 100005               Tunnel Metric    : 2
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.5/32
+NextHop          : 10.250.89.14
+Tunnel Flags     : entropy-label-capable
+Age              : 02h01m56s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Algorithm        : 129                  
+Tunnel ID        : 524297               Preference       : 10
+Tunnel Label     : 100105               Tunnel Metric    : 300
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.6/32
+NextHop          : 10.250.89.14
+Tunnel Flags     : entropy-label-capable
+Age              : 02h40m18s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524296               Preference       : 10
+Tunnel Label     : 100006               Tunnel Metric    : 4
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.6/32
+NextHop          : 10.250.89.5
+Tunnel Flags     : entropy-label-capable
+Age              : 02h40m18s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524296               Preference       : 10
+Tunnel Label     : 100006               Tunnel Metric    : 4
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.6/32
+NextHop          : 10.250.89.14
+Tunnel Flags     : entropy-label-capable
+Age              : 02h06m25s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Algorithm        : 129                  
+Tunnel ID        : 524301               Preference       : 10
+Tunnel Label     : 100106               Tunnel Metric    : 200
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.89.5/32 [L]
+NextHop          : 10.250.89.5
+Tunnel Flags     : has-lfa is-adjacency-tunnel
+Age              : 01d06h40m
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524291               Preference       : 10
+Tunnel Label     : 3                    Tunnel Metric    : 0
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.89.14/32 [L]
+NextHop          : 10.250.89.14
+Tunnel Flags     : has-lfa is-adjacency-tunnel
+Age              : 01d06h40m
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524289               Preference       : 10
+Tunnel Label     : 3                    Tunnel Metric    : 0
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.94.18/32 [L]
+NextHop          : 10.250.94.18
+Tunnel Flags     : has-lfa is-adjacency-tunnel
+Age              : 01d06h40m
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524290               Preference       : 10
+Tunnel Label     : 3                    Tunnel Metric    : 0
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Number of tunnel-table entries          : 15
+Number of tunnel-table entries with LFA : 6
+===============================================================================
+tools dump router ospf 0 sr-database
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Segment Routing Database 
+
+===============================================================================
+SID         Label St Type Prefix                                      Stitching
+                      Algo          AdvRtr            Area Flags          FRR
+-------------------------------------------------------------------------------
+1          100001 +R  LT1 10.250.88.1/32                                      -
+                         0     10.250.88.1         0.0.0.0 [NnP       ]     -
+2          100002 +R   T1 10.250.88.2/32                                      -
+                         0     10.250.88.2         0.0.0.0 [NnP       ]  T(R)
+3          100003 +R   T1 10.250.88.3/32                                      -
+                         0     10.250.88.3         0.0.0.0 [NnP       ]  T(R)
+4          100004 +R   T1 10.250.88.4/32                                      -
+                         0     10.250.88.4         0.0.0.0 [NnP       ]     -
+5          100005 +R   T1 10.250.88.5/32                                      -
+                         0     10.250.88.5         0.0.0.0 [NnP       ]  T(R)
+6          100006 +R   T1 10.250.88.6/32                                      -
+                         0     10.250.88.6         0.0.0.0 [NnP       ]     -
+101        100101 +R  LT1 10.250.88.1/32                                      -
+                       129     10.250.88.1         0.0.0.0 [NnP       ]     -
+102        100102 +R   T1 10.250.88.2/32                                      -
+                       129     10.250.88.2         0.0.0.0 [NnP       ]     -
+103        100103 +R   T1 10.250.88.3/32                                      -
+                       129     10.250.88.3         0.0.0.0 [NnP       ]     -
+104        100104 +R   T1 10.250.88.4/32                                      -
+                       129     10.250.88.4         0.0.0.0 [NnP       ]     -
+105        100105 +R   T1 10.250.88.5/32                                      -
+                       129     10.250.88.5         0.0.0.0 [NnP       ]     -
+106        100106 +R   T1 10.250.88.6/32                                      -
+                       129     10.250.88.6         0.0.0.0 [NnP       ]     -
+-------------------------------------------------------------------------------
+No. of Entries: 12
+-------------------------------------------------------------------------------
+St:   R:reported  I:incomplete  W:wrong  N:not reported  F:failed
+      +:SR-ack  -:no route
+Type: L:local  M: mapping Srv  Tx: route type
+FRR:  L:Lfa  R:RLfa  T:TiLfa  (R):Reported  (F):Failed
+      Ln, Rn, Tn: FRR providing node-protection
+===============================================================================
+show router fp-tunnel-table 1 protocol ospf
+
+===============================================================================
+IPv4 Tunnel Table Display
+
+Legend: 
+label stack is ordered from bottom-most to top-most
+B - FRR Backup
+===============================================================================
+Destination                                  Protocol            Tunnel-ID
+  Lbl/SID                                                         
+    NextHop                                                      Intf/Tunnel
+  Lbl/SID (backup)                                               
+    NextHop   (backup)                                           
+-------------------------------------------------------------------------------
+10.250.88.2/32                               SR-OSPF-0            524292
+  100002
+    10.250.89.14                                                  1/1/1:10
+  100002/100004
+    10.250.94.18(B)                                               1/1/3:903
+10.250.88.2/32                               SR-OSPF-0            524298
+  100102
+    10.250.89.14                                                  1/1/1:10
+10.250.88.3/32                               SR-OSPF-0            524293
+  100003
+    10.250.94.18                                                  1/1/3:903
+  100003/100004
+    10.250.89.14(B)                                               1/1/1:10
+10.250.88.3/32                               SR-OSPF-0            524299
+  100103
+    10.250.89.14                                                  1/1/1:10
+10.250.88.4/32                               SR-OSPF-0            524294
+  100004
+    10.250.89.14                                                  1/1/1:10
+  100004
+    10.250.94.18                                                  1/1/3:903
+10.250.88.4/32                               SR-OSPF-0            524300
+  100104
+    10.250.89.14                                                  1/1/1:10
+10.250.88.5/32                               SR-OSPF-0            524295
+  100005
+    10.250.89.5                                                   1/1/4:10
+  100005/100006
+    10.250.89.14(B)                                               1/1/1:10
+10.250.88.5/32                               SR-OSPF-0            524297
+  100105
+    10.250.89.14                                                  1/1/1:10
+10.250.88.6/32                               SR-OSPF-0            524296
+  100006
+    10.250.89.14                                                  1/1/1:10
+  100006
+    10.250.89.5                                                   1/1/4:10
+10.250.88.6/32                               SR-OSPF-0            524301
+  100106
+    10.250.89.14                                                  1/1/1:10
+-------------------------------------------------------------------------------
+Total Entries : 10
+-------------------------------------------------------------------------------
+===============================================================================
+show commands on Router R2-AGG2 at 2023-06-22 20:41:00.592862
+show router flexible-algorithm-definitions
+
+===============================================================================
+Flexible Algorithm Definitions
+===============================================================================
+-------------------------------------------------------------------------------
+Flex-Algo: FlexAgo_delay
+-------------------------------------------------------------------------------
+Admin State   : Up
+Description   : (Not Specified)
+Flags TLV     : Enabled
+Metric Type   : delay
+Priority      : 100
+Exclude       : N.A.
+Include Any   : N.A.
+Include All   : N.A.
+===============================================================================
+show router ospf flex-algo
+
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Flex-Algos 
+===============================================================================
+Flex-Algo Area             Advertising Participating Num      Selected FAD
+                                                     FADs     Owner (Router-Id)
+-------------------------------------------------------------------------------
+129       0.0.0.0          Yes         Yes           6        10.250.88.6
+-------------------------------------------------------------------------------
+FAD: Flexible Algorithm Definition
+-------------------------------------------------------------------------------
+No. of Flex-Algos: 1 (1 unique)
+===============================================================================
+show router ospf flex-algo detail
+
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Flex-Algos (detail)
+===============================================================================
+-------------------------------------------------------------------------------
+Flex-Algo : 129
+-------------------------------------------------------------------------------
+Advertising FAD         : FlexAgo_delay
+Participating           : Yes
+Loop-Free-Alternate     : Disabled
+Oper state
+  Area 0.0.0.0          : UP
+
+Displaying Area 0.0.0.0 FAD Info
+-------------------------------------------------------------------------------
+FADs-count              : 6
+Selected FAD
+  Fad-Owner             : 10.250.88.6
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+Other FADs
+  Fad-Owner             : 10.250.88.1
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+  Fad-Owner             : 10.250.88.2
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+  Fad-Owner             : 10.250.88.3
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+  Fad-Owner             : 10.250.88.4
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+  Fad-Owner             : 10.250.88.5
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+-------------------------------------------------------------------------------
+FAD: Flexible Algorithm Definition
+Fad Flags:   M = Prefix Metric
+===============================================================================
+show router ospf sid-stats node
+
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Sid Statistics
+===============================================================================
+Ingress Label     : 100001              Type              : node
+Prefix            : 10.250.88.1/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100002              Type              : node
+Prefix            : 10.250.88.2/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100003              Type              : node
+Prefix            : 10.250.88.3/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100004              Type              : node
+Prefix            : 10.250.88.4/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100005              Type              : node
+Prefix            : 10.250.88.5/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100006              Type              : node
+Prefix            : 10.250.88.6/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100101              Type              : node
+Prefix            : 10.250.88.1/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100102              Type              : node
+Prefix            : 10.250.88.2/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100103              Type              : node
+Prefix            : 10.250.88.3/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100104              Type              : node
+Prefix            : 10.250.88.4/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100105              Type              : node
+Prefix            : 10.250.88.5/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100106              Type              : node
+Prefix            : 10.250.88.6/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+-------------------------------------------------------------------------------
+Sid count : 12
+===============================================================================
+show router tunnel-table
+
+===============================================================================
+IPv4 Tunnel Table (Router: Base)
+===============================================================================
+Destination           Owner     Encap TunnelId  Pref   Nexthop        Metric
+   Color                                                              
+-------------------------------------------------------------------------------
+10.250.88.1/32        ldp       MPLS  65537     9      10.250.89.13   2
+10.250.88.1/32 [L]    ospf (0)  MPLS  524292    10     10.250.89.13   2
+10.250.88.1/32        ospf (0)  MPLS  524297    10     10.250.89.13   100
+10.250.88.3/32        ldp       MPLS  65538     9      10.250.89.13   4
+10.250.88.3/32        ldp       MPLS  65538     9      10.250.94.21   4
+10.250.88.3/32        ospf (0)  MPLS  524293    10     10.250.89.13   4
+10.250.88.3/32        ospf (0)  MPLS  524293    10     10.250.94.21   4
+10.250.88.3/32        ospf (0)  MPLS  524298    10     10.250.94.21   200
+10.250.88.4/32        ldp       MPLS  65539     9      10.250.94.21   2
+10.250.88.4/32 [L]    ospf (0)  MPLS  524294    10     10.250.94.21   2
+10.250.88.4/32        ospf (0)  MPLS  524300    10     10.250.94.21   100
+10.250.88.5/32        ldp       MPLS  65540     9      10.250.89.9    4
+10.250.88.5/32        ldp       MPLS  65540     9      10.250.89.13   4
+10.250.88.5/32        ospf (0)  MPLS  524295    10     10.250.89.13   4
+10.250.88.5/32        ospf (0)  MPLS  524295    10     10.250.89.9    4
+10.250.88.5/32        ospf (0)  MPLS  524299    10     10.250.89.9    200
+10.250.88.6/32        ldp       MPLS  65541     9      10.250.89.9    2
+10.250.88.6/32 [L]    ospf (0)  MPLS  524296    10     10.250.89.9    2
+10.250.88.6/32        ospf (0)  MPLS  524301    10     10.250.89.9    100
+10.250.89.9/32 [L]    ospf (0)  MPLS  524290    10     10.250.89.9    0
+10.250.89.13/32 [L]   ospf (0)  MPLS  524289    10     10.250.89.13   0
+10.250.94.21/32 [L]   ospf (0)  MPLS  524291    10     10.250.94.21   0
+-------------------------------------------------------------------------------
+Flags: B = BGP or MPLS backup hop available
+       L = Loop-Free Alternate (LFA) hop available
+       E = Inactive best-external BGP route
+       k = RIB-API or Forwarding Policy backup hop
+===============================================================================
+show router tunnel-table protocol ospf detail
+
+===============================================================================
+Tunnel Table (Router: Base)
+===============================================================================
+Destination      : 10.250.88.1/32 [L]
+NextHop          : 10.250.89.13
+Tunnel Flags     : has-lfa entropy-label-capable
+Age              : 02h40m55s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524292               Preference       : 10
+Tunnel Label     : 100001               Tunnel Metric    : 2
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.1/32
+NextHop          : 10.250.89.13
+Tunnel Flags     : entropy-label-capable
+Age              : 02h07m07s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Algorithm        : 129                  
+Tunnel ID        : 524297               Preference       : 10
+Tunnel Label     : 100101               Tunnel Metric    : 100
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.3/32
+NextHop          : 10.250.89.13
+Tunnel Flags     : entropy-label-capable
+Age              : 02h40m45s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524293               Preference       : 10
+Tunnel Label     : 100003               Tunnel Metric    : 4
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.3/32
+NextHop          : 10.250.94.21
+Tunnel Flags     : entropy-label-capable
+Age              : 02h40m45s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524293               Preference       : 10
+Tunnel Label     : 100003               Tunnel Metric    : 4
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.3/32
+NextHop          : 10.250.94.21
+Tunnel Flags     : entropy-label-capable
+Age              : 02h03m34s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Algorithm        : 129                  
+Tunnel ID        : 524298               Preference       : 10
+Tunnel Label     : 100103               Tunnel Metric    : 200
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.4/32 [L]
+NextHop          : 10.250.94.21
+Tunnel Flags     : has-lfa entropy-label-capable
+Age              : 02h40m38s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524294               Preference       : 10
+Tunnel Label     : 100004               Tunnel Metric    : 2
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.4/32
+NextHop          : 10.250.94.21
+Tunnel Flags     : entropy-label-capable
+Age              : 02h06m56s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Algorithm        : 129                  
+Tunnel ID        : 524300               Preference       : 10
+Tunnel Label     : 100104               Tunnel Metric    : 100
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.5/32
+NextHop          : 10.250.89.13
+Tunnel Flags     : entropy-label-capable
+Age              : 02h40m32s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524295               Preference       : 10
+Tunnel Label     : 100005               Tunnel Metric    : 4
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.5/32
+NextHop          : 10.250.89.9
+Tunnel Flags     : entropy-label-capable
+Age              : 02h40m32s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524295               Preference       : 10
+Tunnel Label     : 100005               Tunnel Metric    : 4
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.5/32
+NextHop          : 10.250.89.9
+Tunnel Flags     : entropy-label-capable
+Age              : 02h02m03s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Algorithm        : 129                  
+Tunnel ID        : 524299               Preference       : 10
+Tunnel Label     : 100105               Tunnel Metric    : 200
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.6/32 [L]
+NextHop          : 10.250.89.9
+Tunnel Flags     : has-lfa entropy-label-capable
+Age              : 02h40m25s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524296               Preference       : 10
+Tunnel Label     : 100006               Tunnel Metric    : 2
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.6/32
+NextHop          : 10.250.89.9
+Tunnel Flags     : entropy-label-capable
+Age              : 02h06m33s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Algorithm        : 129                  
+Tunnel ID        : 524301               Preference       : 10
+Tunnel Label     : 100106               Tunnel Metric    : 100
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.89.9/32 [L]
+NextHop          : 10.250.89.9
+Tunnel Flags     : has-lfa is-adjacency-tunnel
+Age              : 01d06h40m
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524290               Preference       : 10
+Tunnel Label     : 3                    Tunnel Metric    : 0
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.89.13/32 [L]
+NextHop          : 10.250.89.13
+Tunnel Flags     : has-lfa is-adjacency-tunnel
+Age              : 01d06h41m
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524289               Preference       : 10
+Tunnel Label     : 3                    Tunnel Metric    : 0
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.94.21/32 [L]
+NextHop          : 10.250.94.21
+Tunnel Flags     : has-lfa is-adjacency-tunnel
+Age              : 01d06h40m
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524291               Preference       : 10
+Tunnel Label     : 3                    Tunnel Metric    : 0
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Number of tunnel-table entries          : 15
+Number of tunnel-table entries with LFA : 6
+===============================================================================
+tools dump router ospf 0 sr-database
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Segment Routing Database 
+
+===============================================================================
+SID         Label St Type Prefix                                      Stitching
+                      Algo          AdvRtr            Area Flags          FRR
+-------------------------------------------------------------------------------
+1          100001 +R   T1 10.250.88.1/32                                      -
+                         0     10.250.88.1         0.0.0.0 [NnP       ]  T(R)
+2          100002 +R  LT1 10.250.88.2/32                                      -
+                         0     10.250.88.2         0.0.0.0 [NnP       ]     -
+3          100003 +R   T1 10.250.88.3/32                                      -
+                         0     10.250.88.3         0.0.0.0 [NnP       ]     -
+4          100004 +R   T1 10.250.88.4/32                                      -
+                         0     10.250.88.4         0.0.0.0 [NnP       ]  T(R)
+5          100005 +R   T1 10.250.88.5/32                                      -
+                         0     10.250.88.5         0.0.0.0 [NnP       ]     -
+6          100006 +R   T1 10.250.88.6/32                                      -
+                         0     10.250.88.6         0.0.0.0 [NnP       ]  T(R)
+101        100101 +R   T1 10.250.88.1/32                                      -
+                       129     10.250.88.1         0.0.0.0 [NnP       ]     -
+102        100102 +R  LT1 10.250.88.2/32                                      -
+                       129     10.250.88.2         0.0.0.0 [NnP       ]     -
+103        100103 +R   T1 10.250.88.3/32                                      -
+                       129     10.250.88.3         0.0.0.0 [NnP       ]     -
+104        100104 +R   T1 10.250.88.4/32                                      -
+                       129     10.250.88.4         0.0.0.0 [NnP       ]     -
+105        100105 +R   T1 10.250.88.5/32                                      -
+                       129     10.250.88.5         0.0.0.0 [NnP       ]     -
+106        100106 +R   T1 10.250.88.6/32                                      -
+                       129     10.250.88.6         0.0.0.0 [NnP       ]     -
+-------------------------------------------------------------------------------
+No. of Entries: 12
+-------------------------------------------------------------------------------
+St:   R:reported  I:incomplete  W:wrong  N:not reported  F:failed
+      +:SR-ack  -:no route
+Type: L:local  M: mapping Srv  Tx: route type
+FRR:  L:Lfa  R:RLfa  T:TiLfa  (R):Reported  (F):Failed
+      Ln, Rn, Tn: FRR providing node-protection
+===============================================================================
+show router fp-tunnel-table 1 protocol ospf
+
+===============================================================================
+IPv4 Tunnel Table Display
+
+Legend: 
+label stack is ordered from bottom-most to top-most
+B - FRR Backup
+===============================================================================
+Destination                                  Protocol            Tunnel-ID
+  Lbl/SID                                                         
+    NextHop                                                      Intf/Tunnel
+  Lbl/SID (backup)                                               
+    NextHop   (backup)                                           
+-------------------------------------------------------------------------------
+10.250.88.1/32                               SR-OSPF-0            524292
+  100001
+    10.250.89.13                                                  1/1/1:10
+  100001/100003
+    10.250.94.21(B)                                               1/1/3:903
+10.250.88.1/32                               SR-OSPF-0            524297
+  100101
+    10.250.89.13                                                  1/1/1:10
+10.250.88.3/32                               SR-OSPF-0            524293
+  100003
+    10.250.89.13                                                  1/1/1:10
+  100003
+    10.250.94.21                                                  1/1/3:903
+10.250.88.3/32                               SR-OSPF-0            524298
+  100103
+    10.250.94.21                                                  1/1/3:903
+10.250.88.4/32                               SR-OSPF-0            524294
+  100004
+    10.250.94.21                                                  1/1/3:903
+  100004/100003
+    10.250.89.13(B)                                               1/1/1:10
+10.250.88.4/32                               SR-OSPF-0            524300
+  100104
+    10.250.94.21                                                  1/1/3:903
+10.250.88.5/32                               SR-OSPF-0            524295
+  100005
+    10.250.89.13                                                  1/1/1:10
+  100005
+    10.250.89.9                                                   1/1/4:10
+10.250.88.5/32                               SR-OSPF-0            524299
+  100105
+    10.250.89.9                                                   1/1/4:10
+10.250.88.6/32                               SR-OSPF-0            524296
+  100006
+    10.250.89.9                                                   1/1/4:10
+  100006/100005
+    10.250.89.13(B)                                               1/1/1:10
+10.250.88.6/32                               SR-OSPF-0            524301
+  100106
+    10.250.89.9                                                   1/1/4:10
+-------------------------------------------------------------------------------
+Total Entries : 10
+-------------------------------------------------------------------------------
+===============================================================================
+show commands on Router R3-CSG1 at 2023-06-22 20:41:06.498325
+show router flexible-algorithm-definitions
+
+===============================================================================
+Flexible Algorithm Definitions
+===============================================================================
+-------------------------------------------------------------------------------
+Flex-Algo: FlexAgo_delay
+-------------------------------------------------------------------------------
+Admin State   : Up
+Description   : (Not Specified)
+Flags TLV     : Enabled
+Metric Type   : delay
+Priority      : 100
+Exclude       : N.A.
+Include Any   : N.A.
+Include All   : N.A.
+===============================================================================
+show router ospf flex-algo
+
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Flex-Algos 
+===============================================================================
+Flex-Algo Area             Advertising Participating Num      Selected FAD
+                                                     FADs     Owner (Router-Id)
+-------------------------------------------------------------------------------
+129       0.0.0.0          Yes         Yes           6        10.250.88.6
+-------------------------------------------------------------------------------
+FAD: Flexible Algorithm Definition
+-------------------------------------------------------------------------------
+No. of Flex-Algos: 1 (1 unique)
+===============================================================================
+show router ospf flex-algo detail
+
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Flex-Algos (detail)
+===============================================================================
+-------------------------------------------------------------------------------
+Flex-Algo : 129
+-------------------------------------------------------------------------------
+Advertising FAD         : FlexAgo_delay
+Participating           : Yes
+Loop-Free-Alternate     : Disabled
+Oper state
+  Area 0.0.0.0          : UP
+
+Displaying Area 0.0.0.0 FAD Info
+-------------------------------------------------------------------------------
+FADs-count              : 6
+Selected FAD
+  Fad-Owner             : 10.250.88.6
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+Other FADs
+  Fad-Owner             : 10.250.88.1
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+  Fad-Owner             : 10.250.88.2
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+  Fad-Owner             : 10.250.88.3
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+  Fad-Owner             : 10.250.88.4
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+  Fad-Owner             : 10.250.88.5
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+-------------------------------------------------------------------------------
+FAD: Flexible Algorithm Definition
+Fad Flags:   M = Prefix Metric
+===============================================================================
+show router ospf sid-stats node
+
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Sid Statistics
+===============================================================================
+Ingress Label     : 100001              Type              : node
+Prefix            : 10.250.88.1/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100002              Type              : node
+Prefix            : 10.250.88.2/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100003              Type              : node
+Prefix            : 10.250.88.3/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100004              Type              : node
+Prefix            : 10.250.88.4/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100005              Type              : node
+Prefix            : 10.250.88.5/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100006              Type              : node
+Prefix            : 10.250.88.6/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100101              Type              : node
+Prefix            : 10.250.88.1/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100102              Type              : node
+Prefix            : 10.250.88.2/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100103              Type              : node
+Prefix            : 10.250.88.3/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100104              Type              : node
+Prefix            : 10.250.88.4/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100105              Type              : node
+Prefix            : 10.250.88.5/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100106              Type              : node
+Prefix            : 10.250.88.6/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+-------------------------------------------------------------------------------
+Sid count : 12
+===============================================================================
+show router tunnel-table
+
+===============================================================================
+IPv4 Tunnel Table (Router: Base)
+===============================================================================
+Destination           Owner     Encap TunnelId  Pref   Nexthop        Metric
+   Color                                                              
+-------------------------------------------------------------------------------
+10.250.88.1/32        ldp       MPLS  65537     9      10.250.94.17   2
+10.250.88.1/32 [L]    ospf (0)  MPLS  524291    10     10.250.94.17   2
+10.250.88.1/32        ospf (0)  MPLS  524296    10     10.250.89.26   300
+10.250.88.2/32        ldp       MPLS  65538     9      10.250.89.26   4
+10.250.88.2/32        ldp       MPLS  65538     9      10.250.94.17   4
+10.250.88.2/32        ospf (0)  MPLS  524292    10     10.250.94.17   4
+10.250.88.2/32        ospf (0)  MPLS  524292    10     10.250.89.26   4
+10.250.88.2/32        ospf (0)  MPLS  524297    10     10.250.89.26   200
+10.250.88.4/32        ldp       MPLS  65539     9      10.250.89.26   2
+10.250.88.4/32 [L]    ospf (0)  MPLS  524293    10     10.250.89.26   2
+10.250.88.4/32        ospf (0)  MPLS  524298    10     10.250.89.26   100
+10.250.88.5/32        ldp       MPLS  65540     9      10.250.94.17   4
+10.250.88.5/32 [L]    ospf (0)  MPLS  524294    10     10.250.94.17   4
+10.250.88.5/32        ospf (0)  MPLS  524299    10     10.250.89.26   400
+10.250.88.6/32        ldp       MPLS  65541     9      10.250.89.26   6
+10.250.88.6/32        ldp       MPLS  65541     9      10.250.94.17   6
+10.250.88.6/32        ospf (0)  MPLS  524295    10     10.250.94.17   6
+10.250.88.6/32        ospf (0)  MPLS  524295    10     10.250.89.26   6
+10.250.88.6/32        ospf (0)  MPLS  524300    10     10.250.89.26   300
+10.250.89.26/32 [L]   ospf (0)  MPLS  524290    10     10.250.89.26   0
+10.250.94.17/32 [L]   ospf (0)  MPLS  524289    10     10.250.94.17   0
+-------------------------------------------------------------------------------
+Flags: B = BGP or MPLS backup hop available
+       L = Loop-Free Alternate (LFA) hop available
+       E = Inactive best-external BGP route
+       k = RIB-API or Forwarding Policy backup hop
+===============================================================================
+show router tunnel-table protocol ospf detail
+
+===============================================================================
+Tunnel Table (Router: Base)
+===============================================================================
+Destination      : 10.250.88.1/32 [L]
+NextHop          : 10.250.94.17
+Tunnel Flags     : has-lfa entropy-label-capable
+Age              : 02h40m59s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524291               Preference       : 10
+Tunnel Label     : 100001               Tunnel Metric    : 2
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.1/32
+NextHop          : 10.250.89.26
+Tunnel Flags     : entropy-label-capable
+Age              : 02h03m50s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Algorithm        : 129                  
+Tunnel ID        : 524296               Preference       : 10
+Tunnel Label     : 100101               Tunnel Metric    : 300
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.2/32
+NextHop          : 10.250.94.17
+Tunnel Flags     : entropy-label-capable
+Age              : 02h40m54s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524292               Preference       : 10
+Tunnel Label     : 100002               Tunnel Metric    : 4
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.2/32
+NextHop          : 10.250.89.26
+Tunnel Flags     : entropy-label-capable
+Age              : 02h40m54s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524292               Preference       : 10
+Tunnel Label     : 100002               Tunnel Metric    : 4
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.2/32
+NextHop          : 10.250.89.26
+Tunnel Flags     : entropy-label-capable
+Age              : 02h03m50s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Algorithm        : 129                  
+Tunnel ID        : 524297               Preference       : 10
+Tunnel Label     : 100102               Tunnel Metric    : 200
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.4/32 [L]
+NextHop          : 10.250.89.26
+Tunnel Flags     : has-lfa entropy-label-capable
+Age              : 02h40m41s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524293               Preference       : 10
+Tunnel Label     : 100004               Tunnel Metric    : 2
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.4/32
+NextHop          : 10.250.89.26
+Tunnel Flags     : entropy-label-capable
+Age              : 02h04m17s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Algorithm        : 129                  
+Tunnel ID        : 524298               Preference       : 10
+Tunnel Label     : 100104               Tunnel Metric    : 100
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.5/32 [L]
+NextHop          : 10.250.94.17
+Tunnel Flags     : has-lfa entropy-label-capable
+Age              : 02h40m36s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524294               Preference       : 10
+Tunnel Label     : 100005               Tunnel Metric    : 4
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.5/32
+NextHop          : 10.250.89.26
+Tunnel Flags     : entropy-label-capable
+Age              : 02h02m07s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Algorithm        : 129                  
+Tunnel ID        : 524299               Preference       : 10
+Tunnel Label     : 100105               Tunnel Metric    : 400
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.6/32
+NextHop          : 10.250.94.17
+Tunnel Flags     : entropy-label-capable
+Age              : 02h40m29s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524295               Preference       : 10
+Tunnel Label     : 100006               Tunnel Metric    : 6
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.6/32
+NextHop          : 10.250.89.26
+Tunnel Flags     : entropy-label-capable
+Age              : 02h40m29s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524295               Preference       : 10
+Tunnel Label     : 100006               Tunnel Metric    : 6
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.6/32
+NextHop          : 10.250.89.26
+Tunnel Flags     : entropy-label-capable
+Age              : 02h03m50s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Algorithm        : 129                  
+Tunnel ID        : 524300               Preference       : 10
+Tunnel Label     : 100106               Tunnel Metric    : 300
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.89.26/32 [L]
+NextHop          : 10.250.89.26
+Tunnel Flags     : has-lfa is-adjacency-tunnel
+Age              : 01d06h41m
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524290               Preference       : 10
+Tunnel Label     : 3                    Tunnel Metric    : 0
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.94.17/32 [L]
+NextHop          : 10.250.94.17
+Tunnel Flags     : has-lfa is-adjacency-tunnel
+Age              : 01d06h41m
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524289               Preference       : 10
+Tunnel Label     : 3                    Tunnel Metric    : 0
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Number of tunnel-table entries          : 14
+Number of tunnel-table entries with LFA : 5
+===============================================================================
+tools dump router ospf 0 sr-database
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Segment Routing Database 
+
+===============================================================================
+SID         Label St Type Prefix                                      Stitching
+                      Algo          AdvRtr            Area Flags          FRR
+-------------------------------------------------------------------------------
+1          100001 +R   T1 10.250.88.1/32                                      -
+                         0     10.250.88.1         0.0.0.0 [NnP       ]  T(R)
+2          100002 +R   T1 10.250.88.2/32                                      -
+                         0     10.250.88.2         0.0.0.0 [NnP       ]     -
+3          100003 +R  LT1 10.250.88.3/32                                      -
+                         0     10.250.88.3         0.0.0.0 [NnP       ]     -
+4          100004 +R   T1 10.250.88.4/32                                      -
+                         0     10.250.88.4         0.0.0.0 [NnP       ]  T(R)
+5          100005 +R   T1 10.250.88.5/32                                      -
+                         0     10.250.88.5         0.0.0.0 [NnP       ]  T(R)
+6          100006 +R   T1 10.250.88.6/32                                      -
+                         0     10.250.88.6         0.0.0.0 [NnP       ]     -
+101        100101 +R   T1 10.250.88.1/32                                      -
+                       129     10.250.88.1         0.0.0.0 [NnP       ]     -
+102        100102 +R   T1 10.250.88.2/32                                      -
+                       129     10.250.88.2         0.0.0.0 [NnP       ]     -
+103        100103 +R  LT1 10.250.88.3/32                                      -
+                       129     10.250.88.3         0.0.0.0 [NnP       ]     -
+104        100104 +R   T1 10.250.88.4/32                                      -
+                       129     10.250.88.4         0.0.0.0 [NnP       ]     -
+105        100105 +R   T1 10.250.88.5/32                                      -
+                       129     10.250.88.5         0.0.0.0 [NnP       ]     -
+106        100106 +R   T1 10.250.88.6/32                                      -
+                       129     10.250.88.6         0.0.0.0 [NnP       ]     -
+-------------------------------------------------------------------------------
+No. of Entries: 12
+-------------------------------------------------------------------------------
+St:   R:reported  I:incomplete  W:wrong  N:not reported  F:failed
+      +:SR-ack  -:no route
+Type: L:local  M: mapping Srv  Tx: route type
+FRR:  L:Lfa  R:RLfa  T:TiLfa  (R):Reported  (F):Failed
+      Ln, Rn, Tn: FRR providing node-protection
+===============================================================================
+show router fp-tunnel-table 1 protocol ospf
+
+===============================================================================
+IPv4 Tunnel Table Display
+
+Legend: 
+label stack is ordered from bottom-most to top-most
+B - FRR Backup
+===============================================================================
+Destination                                  Protocol            Tunnel-ID
+  Lbl/SID                                                         
+    NextHop                                                      Intf/Tunnel
+  Lbl/SID (backup)                                               
+    NextHop   (backup)                                           
+-------------------------------------------------------------------------------
+10.250.88.1/32                               SR-OSPF-0            524291
+  100001
+    10.250.94.17                                                  1/1/3:903
+  100001/100002
+    10.250.89.26(B)                                               1/1/1:10
+10.250.88.1/32                               SR-OSPF-0            524296
+  100101
+    10.250.89.26                                                  1/1/1:10
+10.250.88.2/32                               SR-OSPF-0            524292
+  100002
+    10.250.94.17                                                  1/1/3:903
+  100002
+    10.250.89.26                                                  1/1/1:10
+10.250.88.2/32                               SR-OSPF-0            524297
+  100102
+    10.250.89.26                                                  1/1/1:10
+10.250.88.4/32                               SR-OSPF-0            524293
+  100004
+    10.250.89.26                                                  1/1/1:10
+  100004/100002
+    10.250.94.17(B)                                               1/1/3:903
+10.250.88.4/32                               SR-OSPF-0            524298
+  100104
+    10.250.89.26                                                  1/1/1:10
+10.250.88.5/32                               SR-OSPF-0            524294
+  100005
+    10.250.94.17                                                  1/1/3:903
+  100005/100002
+    10.250.89.26(B)                                               1/1/1:10
+10.250.88.5/32                               SR-OSPF-0            524299
+  100105
+    10.250.89.26                                                  1/1/1:10
+10.250.88.6/32                               SR-OSPF-0            524295
+  100006
+    10.250.94.17                                                  1/1/3:903
+  100006
+    10.250.89.26                                                  1/1/1:10
+10.250.88.6/32                               SR-OSPF-0            524300
+  100106
+    10.250.89.26                                                  1/1/1:10
+-------------------------------------------------------------------------------
+Total Entries : 10
+-------------------------------------------------------------------------------
+===============================================================================
+show commands on Router R4-CSG2 at 2023-06-22 20:41:10.313994
+show router flexible-algorithm-definitions
+
+===============================================================================
+Flexible Algorithm Definitions
+===============================================================================
+-------------------------------------------------------------------------------
+Flex-Algo: FlexAgo_delay
+-------------------------------------------------------------------------------
+Admin State   : Up
+Description   : (Not Specified)
+Flags TLV     : Enabled
+Metric Type   : delay
+Priority      : 100
+Exclude       : N.A.
+Include Any   : N.A.
+Include All   : N.A.
+===============================================================================
+show router ospf flex-algo
+
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Flex-Algos 
+===============================================================================
+Flex-Algo Area             Advertising Participating Num      Selected FAD
+                                                     FADs     Owner (Router-Id)
+-------------------------------------------------------------------------------
+129       0.0.0.0          Yes         Yes           6        10.250.88.6
+-------------------------------------------------------------------------------
+FAD: Flexible Algorithm Definition
+-------------------------------------------------------------------------------
+No. of Flex-Algos: 1 (1 unique)
+===============================================================================
+show router ospf flex-algo detail
+
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Flex-Algos (detail)
+===============================================================================
+-------------------------------------------------------------------------------
+Flex-Algo : 129
+-------------------------------------------------------------------------------
+Advertising FAD         : FlexAgo_delay
+Participating           : Yes
+Loop-Free-Alternate     : Disabled
+Oper state
+  Area 0.0.0.0          : UP
+
+Displaying Area 0.0.0.0 FAD Info
+-------------------------------------------------------------------------------
+FADs-count              : 6
+Selected FAD
+  Fad-Owner             : 10.250.88.6
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+Other FADs
+  Fad-Owner             : 10.250.88.1
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+  Fad-Owner             : 10.250.88.2
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+  Fad-Owner             : 10.250.88.3
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+  Fad-Owner             : 10.250.88.4
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+  Fad-Owner             : 10.250.88.5
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+-------------------------------------------------------------------------------
+FAD: Flexible Algorithm Definition
+Fad Flags:   M = Prefix Metric
+===============================================================================
+show router ospf sid-stats node
+
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Sid Statistics
+===============================================================================
+Ingress Label     : 100001              Type              : node
+Prefix            : 10.250.88.1/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100002              Type              : node
+Prefix            : 10.250.88.2/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100003              Type              : node
+Prefix            : 10.250.88.3/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100004              Type              : node
+Prefix            : 10.250.88.4/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100005              Type              : node
+Prefix            : 10.250.88.5/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100006              Type              : node
+Prefix            : 10.250.88.6/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100101              Type              : node
+Prefix            : 10.250.88.1/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100102              Type              : node
+Prefix            : 10.250.88.2/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100103              Type              : node
+Prefix            : 10.250.88.3/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100104              Type              : node
+Prefix            : 10.250.88.4/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100105              Type              : node
+Prefix            : 10.250.88.5/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100106              Type              : node
+Prefix            : 10.250.88.6/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+-------------------------------------------------------------------------------
+Sid count : 12
+===============================================================================
+show router tunnel-table
+
+===============================================================================
+IPv4 Tunnel Table (Router: Base)
+===============================================================================
+Destination           Owner     Encap TunnelId  Pref   Nexthop        Metric
+   Color                                                              
+-------------------------------------------------------------------------------
+10.250.88.1/32        ldp       MPLS  65538     9      10.250.89.25   4
+10.250.88.1/32        ldp       MPLS  65538     9      10.250.94.22   4
+10.250.88.1/32        ospf (0)  MPLS  524291    10     10.250.94.22   4
+10.250.88.1/32        ospf (0)  MPLS  524291    10     10.250.89.25   4
+10.250.88.1/32        ospf (0)  MPLS  524296    10     10.250.94.22   200
+10.250.88.2/32        ldp       MPLS  65537     9      10.250.94.22   2
+10.250.88.2/32 [L]    ospf (0)  MPLS  524292    10     10.250.94.22   2
+10.250.88.2/32        ospf (0)  MPLS  524297    10     10.250.94.22   100
+10.250.88.3/32        ldp       MPLS  65539     9      10.250.89.25   2
+10.250.88.3/32 [L]    ospf (0)  MPLS  524293    10     10.250.89.25   2
+10.250.88.3/32        ospf (0)  MPLS  524298    10     10.250.89.25   100
+10.250.88.5/32        ldp       MPLS  65540     9      10.250.89.25   6
+10.250.88.5/32        ldp       MPLS  65540     9      10.250.94.22   6
+10.250.88.5/32        ospf (0)  MPLS  524294    10     10.250.94.22   6
+10.250.88.5/32        ospf (0)  MPLS  524294    10     10.250.89.25   6
+10.250.88.5/32        ospf (0)  MPLS  524299    10     10.250.94.22   300
+10.250.88.6/32        ldp       MPLS  65541     9      10.250.94.22   4
+10.250.88.6/32 [L]    ospf (0)  MPLS  524295    10     10.250.94.22   4
+10.250.88.6/32        ospf (0)  MPLS  524300    10     10.250.94.22   200
+10.250.89.25/32 [L]   ospf (0)  MPLS  524289    10     10.250.89.25   0
+10.250.94.22/32 [L]   ospf (0)  MPLS  524290    10     10.250.94.22   0
+-------------------------------------------------------------------------------
+Flags: B = BGP or MPLS backup hop available
+       L = Loop-Free Alternate (LFA) hop available
+       E = Inactive best-external BGP route
+       k = RIB-API or Forwarding Policy backup hop
+===============================================================================
+show router tunnel-table protocol ospf detail
+
+===============================================================================
+Tunnel Table (Router: Base)
+===============================================================================
+Destination      : 10.250.88.1/32
+NextHop          : 10.250.94.22
+Tunnel Flags     : entropy-label-capable
+Age              : 02h41m03s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524291               Preference       : 10
+Tunnel Label     : 100001               Tunnel Metric    : 4
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.1/32
+NextHop          : 10.250.89.25
+Tunnel Flags     : entropy-label-capable
+Age              : 02h41m03s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524291               Preference       : 10
+Tunnel Label     : 100001               Tunnel Metric    : 4
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.1/32
+NextHop          : 10.250.94.22
+Tunnel Flags     : entropy-label-capable
+Age              : 02h03m55s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Algorithm        : 129                  
+Tunnel ID        : 524296               Preference       : 10
+Tunnel Label     : 100101               Tunnel Metric    : 200
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.2/32 [L]
+NextHop          : 10.250.94.22
+Tunnel Flags     : has-lfa entropy-label-capable
+Age              : 02h40m58s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524292               Preference       : 10
+Tunnel Label     : 100002               Tunnel Metric    : 2
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.2/32
+NextHop          : 10.250.94.22
+Tunnel Flags     : entropy-label-capable
+Age              : 02h03m55s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Algorithm        : 129                  
+Tunnel ID        : 524297               Preference       : 10
+Tunnel Label     : 100102               Tunnel Metric    : 100
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.3/32 [L]
+NextHop          : 10.250.89.25
+Tunnel Flags     : has-lfa entropy-label-capable
+Age              : 02h40m53s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524293               Preference       : 10
+Tunnel Label     : 100003               Tunnel Metric    : 2
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.3/32
+NextHop          : 10.250.89.25
+Tunnel Flags     : entropy-label-capable
+Age              : 02h03m42s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Algorithm        : 129                  
+Tunnel ID        : 524298               Preference       : 10
+Tunnel Label     : 100103               Tunnel Metric    : 100
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.5/32
+NextHop          : 10.250.94.22
+Tunnel Flags     : entropy-label-capable
+Age              : 02h40m40s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524294               Preference       : 10
+Tunnel Label     : 100005               Tunnel Metric    : 6
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.5/32
+NextHop          : 10.250.89.25
+Tunnel Flags     : entropy-label-capable
+Age              : 02h40m40s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524294               Preference       : 10
+Tunnel Label     : 100005               Tunnel Metric    : 6
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.5/32
+NextHop          : 10.250.94.22
+Tunnel Flags     : entropy-label-capable
+Age              : 02h02m11s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Algorithm        : 129                  
+Tunnel ID        : 524299               Preference       : 10
+Tunnel Label     : 100105               Tunnel Metric    : 300
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.6/32 [L]
+NextHop          : 10.250.94.22
+Tunnel Flags     : has-lfa entropy-label-capable
+Age              : 02h40m33s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524295               Preference       : 10
+Tunnel Label     : 100006               Tunnel Metric    : 4
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.6/32
+NextHop          : 10.250.94.22
+Tunnel Flags     : entropy-label-capable
+Age              : 02h03m54s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Algorithm        : 129                  
+Tunnel ID        : 524300               Preference       : 10
+Tunnel Label     : 100106               Tunnel Metric    : 200
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.89.25/32 [L]
+NextHop          : 10.250.89.25
+Tunnel Flags     : has-lfa is-adjacency-tunnel
+Age              : 01d06h41m
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524289               Preference       : 10
+Tunnel Label     : 3                    Tunnel Metric    : 0
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.94.22/32 [L]
+NextHop          : 10.250.94.22
+Tunnel Flags     : has-lfa is-adjacency-tunnel
+Age              : 01d06h41m
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524290               Preference       : 10
+Tunnel Label     : 3                    Tunnel Metric    : 0
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Number of tunnel-table entries          : 14
+Number of tunnel-table entries with LFA : 5
+===============================================================================
+tools dump router ospf 0 sr-database
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Segment Routing Database 
+
+===============================================================================
+SID         Label St Type Prefix                                      Stitching
+                      Algo          AdvRtr            Area Flags          FRR
+-------------------------------------------------------------------------------
+1          100001 +R   T1 10.250.88.1/32                                      -
+                         0     10.250.88.1         0.0.0.0 [NnP       ]     -
+2          100002 +R   T1 10.250.88.2/32                                      -
+                         0     10.250.88.2         0.0.0.0 [NnP       ]  T(R)
+3          100003 +R   T1 10.250.88.3/32                                      -
+                         0     10.250.88.3         0.0.0.0 [NnP       ]  T(R)
+4          100004 +R  LT1 10.250.88.4/32                                      -
+                         0     10.250.88.4         0.0.0.0 [NnP       ]     -
+5          100005 +R   T1 10.250.88.5/32                                      -
+                         0     10.250.88.5         0.0.0.0 [NnP       ]     -
+6          100006 +R   T1 10.250.88.6/32                                      -
+                         0     10.250.88.6         0.0.0.0 [NnP       ]  T(R)
+101        100101 +R   T1 10.250.88.1/32                                      -
+                       129     10.250.88.1         0.0.0.0 [NnP       ]     -
+102        100102 +R   T1 10.250.88.2/32                                      -
+                       129     10.250.88.2         0.0.0.0 [NnP       ]     -
+103        100103 +R   T1 10.250.88.3/32                                      -
+                       129     10.250.88.3         0.0.0.0 [NnP       ]     -
+104        100104 +R  LT1 10.250.88.4/32                                      -
+                       129     10.250.88.4         0.0.0.0 [NnP       ]     -
+105        100105 +R   T1 10.250.88.5/32                                      -
+                       129     10.250.88.5         0.0.0.0 [NnP       ]     -
+106        100106 +R   T1 10.250.88.6/32                                      -
+                       129     10.250.88.6         0.0.0.0 [NnP       ]     -
+-------------------------------------------------------------------------------
+No. of Entries: 12
+-------------------------------------------------------------------------------
+St:   R:reported  I:incomplete  W:wrong  N:not reported  F:failed
+      +:SR-ack  -:no route
+Type: L:local  M: mapping Srv  Tx: route type
+FRR:  L:Lfa  R:RLfa  T:TiLfa  (R):Reported  (F):Failed
+      Ln, Rn, Tn: FRR providing node-protection
+===============================================================================
+show router fp-tunnel-table 1 protocol ospf
+
+===============================================================================
+IPv4 Tunnel Table Display
+
+Legend: 
+label stack is ordered from bottom-most to top-most
+B - FRR Backup
+===============================================================================
+Destination                                  Protocol            Tunnel-ID
+  Lbl/SID                                                         
+    NextHop                                                      Intf/Tunnel
+  Lbl/SID (backup)                                               
+    NextHop   (backup)                                           
+-------------------------------------------------------------------------------
+10.250.88.1/32                               SR-OSPF-0            524291
+  100001
+    10.250.94.22                                                  1/1/3:903
+  100001
+    10.250.89.25                                                  1/1/1:10
+10.250.88.1/32                               SR-OSPF-0            524296
+  100101
+    10.250.94.22                                                  1/1/3:903
+10.250.88.2/32                               SR-OSPF-0            524292
+  100002
+    10.250.94.22                                                  1/1/3:903
+  100002/100001
+    10.250.89.25(B)                                               1/1/1:10
+10.250.88.2/32                               SR-OSPF-0            524297
+  100102
+    10.250.94.22                                                  1/1/3:903
+10.250.88.3/32                               SR-OSPF-0            524293
+  100003
+    10.250.89.25                                                  1/1/1:10
+  100003/100001
+    10.250.94.22(B)                                               1/1/3:903
+10.250.88.3/32                               SR-OSPF-0            524298
+  100103
+    10.250.89.25                                                  1/1/1:10
+10.250.88.5/32                               SR-OSPF-0            524294
+  100005
+    10.250.94.22                                                  1/1/3:903
+  100005
+    10.250.89.25                                                  1/1/1:10
+10.250.88.5/32                               SR-OSPF-0            524299
+  100105
+    10.250.94.22                                                  1/1/3:903
+10.250.88.6/32                               SR-OSPF-0            524295
+  100006
+    10.250.94.22                                                  1/1/3:903
+  100006/100001
+    10.250.89.25(B)                                               1/1/1:10
+10.250.88.6/32                               SR-OSPF-0            524300
+  100106
+    10.250.94.22                                                  1/1/3:903
+-------------------------------------------------------------------------------
+Total Entries : 10
+-------------------------------------------------------------------------------
+===============================================================================
+show commands on Router R5-MTC1 at 2023-06-22 20:41:14.146383
+show router flexible-algorithm-definitions
+
+===============================================================================
+Flexible Algorithm Definitions
+===============================================================================
+-------------------------------------------------------------------------------
+Flex-Algo: FlexAgo_delay
+-------------------------------------------------------------------------------
+Admin State   : Up
+Description   : (Not Specified)
+Flags TLV     : Enabled
+Metric Type   : delay
+Priority      : 100
+Exclude       : N.A.
+Include Any   : N.A.
+Include All   : N.A.
+===============================================================================
+show router ospf flex-algo
+
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Flex-Algos 
+===============================================================================
+Flex-Algo Area             Advertising Participating Num      Selected FAD
+                                                     FADs     Owner (Router-Id)
+-------------------------------------------------------------------------------
+129       0.0.0.0          Yes         Yes           6        10.250.88.6
+-------------------------------------------------------------------------------
+FAD: Flexible Algorithm Definition
+-------------------------------------------------------------------------------
+No. of Flex-Algos: 1 (1 unique)
+===============================================================================
+show router ospf flex-algo detail
+
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Flex-Algos (detail)
+===============================================================================
+-------------------------------------------------------------------------------
+Flex-Algo : 129
+-------------------------------------------------------------------------------
+Advertising FAD         : FlexAgo_delay
+Participating           : Yes
+Loop-Free-Alternate     : Disabled
+Oper state
+  Area 0.0.0.0          : UP
+
+Displaying Area 0.0.0.0 FAD Info
+-------------------------------------------------------------------------------
+FADs-count              : 6
+Selected FAD
+  Fad-Owner             : 10.250.88.6
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+Other FADs
+  Fad-Owner             : 10.250.88.1
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+  Fad-Owner             : 10.250.88.2
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+  Fad-Owner             : 10.250.88.3
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+  Fad-Owner             : 10.250.88.4
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+  Fad-Owner             : 10.250.88.5
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+-------------------------------------------------------------------------------
+FAD: Flexible Algorithm Definition
+Fad Flags:   M = Prefix Metric
+===============================================================================
+show router ospf sid-stats node
+
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Sid Statistics
+===============================================================================
+Ingress Label     : 100001              Type              : node
+Prefix            : 10.250.88.1/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100002              Type              : node
+Prefix            : 10.250.88.2/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100003              Type              : node
+Prefix            : 10.250.88.3/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100004              Type              : node
+Prefix            : 10.250.88.4/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100005              Type              : node
+Prefix            : 10.250.88.5/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100006              Type              : node
+Prefix            : 10.250.88.6/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100101              Type              : node
+Prefix            : 10.250.88.1/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100102              Type              : node
+Prefix            : 10.250.88.2/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100103              Type              : node
+Prefix            : 10.250.88.3/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100104              Type              : node
+Prefix            : 10.250.88.4/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100105              Type              : node
+Prefix            : 10.250.88.5/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100106              Type              : node
+Prefix            : 10.250.88.6/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+-------------------------------------------------------------------------------
+Sid count : 12
+===============================================================================
+show router tunnel-table
+
+===============================================================================
+IPv4 Tunnel Table (Router: Base)
+===============================================================================
+Destination           Owner     Encap TunnelId  Pref   Nexthop        Metric
+   Color                                                              
+-------------------------------------------------------------------------------
+10.250.88.1/32        ldp       MPLS  65537     9      10.250.89.6    2
+10.250.88.1/32 [L]    ospf (0)  MPLS  524291    10     10.250.89.6    2
+10.250.88.1/32        ospf (0)  MPLS  524296    10     10.250.89.2    300
+10.250.88.2/32        ldp       MPLS  65538     9      10.250.89.2    4
+10.250.88.2/32        ldp       MPLS  65538     9      10.250.89.6    4
+10.250.88.2/32        ospf (0)  MPLS  524292    10     10.250.89.6    4
+10.250.88.2/32        ospf (0)  MPLS  524292    10     10.250.89.2    4
+10.250.88.2/32        ospf (0)  MPLS  524297    10     10.250.89.2    200
+10.250.88.3/32        ldp       MPLS  65539     9      10.250.89.6    4
+10.250.88.3/32 [L]    ospf (0)  MPLS  524293    10     10.250.89.6    4
+10.250.88.3/32        ospf (0)  MPLS  524298    10     10.250.89.2    400
+10.250.88.4/32        ldp       MPLS  65540     9      10.250.89.2    6
+10.250.88.4/32        ldp       MPLS  65540     9      10.250.89.6    6
+10.250.88.4/32        ospf (0)  MPLS  524294    10     10.250.89.6    6
+10.250.88.4/32        ospf (0)  MPLS  524294    10     10.250.89.2    6
+10.250.88.4/32        ospf (0)  MPLS  524299    10     10.250.89.2    300
+10.250.88.6/32        ldp       MPLS  65541     9      10.250.89.2    2
+10.250.88.6/32 [L]    ospf (0)  MPLS  524295    10     10.250.89.2    2
+10.250.88.6/32        ospf (0)  MPLS  524300    10     10.250.89.2    100
+10.250.89.2/32 [L]    ospf (0)  MPLS  524290    10     10.250.89.2    0
+10.250.89.6/32 [L]    ospf (0)  MPLS  524289    10     10.250.89.6    0
+-------------------------------------------------------------------------------
+Flags: B = BGP or MPLS backup hop available
+       L = Loop-Free Alternate (LFA) hop available
+       E = Inactive best-external BGP route
+       k = RIB-API or Forwarding Policy backup hop
+===============================================================================
+show router tunnel-table protocol ospf detail
+
+===============================================================================
+Tunnel Table (Router: Base)
+===============================================================================
+Destination      : 10.250.88.1/32 [L]
+NextHop          : 10.250.89.6
+Tunnel Flags     : has-lfa entropy-label-capable
+Age              : 02h41m07s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524291               Preference       : 10
+Tunnel Label     : 100001               Tunnel Metric    : 2
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.1/32
+NextHop          : 10.250.89.2
+Tunnel Flags     : entropy-label-capable
+Age              : 02h02m25s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Algorithm        : 129                  
+Tunnel ID        : 524296               Preference       : 10
+Tunnel Label     : 100101               Tunnel Metric    : 300
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.2/32
+NextHop          : 10.250.89.6
+Tunnel Flags     : entropy-label-capable
+Age              : 02h41m02s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524292               Preference       : 10
+Tunnel Label     : 100002               Tunnel Metric    : 4
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.2/32
+NextHop          : 10.250.89.2
+Tunnel Flags     : entropy-label-capable
+Age              : 02h41m02s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524292               Preference       : 10
+Tunnel Label     : 100002               Tunnel Metric    : 4
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.2/32
+NextHop          : 10.250.89.2
+Tunnel Flags     : entropy-label-capable
+Age              : 02h02m25s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Algorithm        : 129                  
+Tunnel ID        : 524297               Preference       : 10
+Tunnel Label     : 100102               Tunnel Metric    : 200
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.3/32 [L]
+NextHop          : 10.250.89.6
+Tunnel Flags     : has-lfa entropy-label-capable
+Age              : 02h40m56s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524293               Preference       : 10
+Tunnel Label     : 100003               Tunnel Metric    : 4
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.3/32
+NextHop          : 10.250.89.2
+Tunnel Flags     : entropy-label-capable
+Age              : 02h02m25s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Algorithm        : 129                  
+Tunnel ID        : 524298               Preference       : 10
+Tunnel Label     : 100103               Tunnel Metric    : 400
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.4/32
+NextHop          : 10.250.89.6
+Tunnel Flags     : entropy-label-capable
+Age              : 02h40m49s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524294               Preference       : 10
+Tunnel Label     : 100004               Tunnel Metric    : 6
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.4/32
+NextHop          : 10.250.89.2
+Tunnel Flags     : entropy-label-capable
+Age              : 02h40m49s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524294               Preference       : 10
+Tunnel Label     : 100004               Tunnel Metric    : 6
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.4/32
+NextHop          : 10.250.89.2
+Tunnel Flags     : entropy-label-capable
+Age              : 02h02m25s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Algorithm        : 129                  
+Tunnel ID        : 524299               Preference       : 10
+Tunnel Label     : 100104               Tunnel Metric    : 300
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.6/32 [L]
+NextHop          : 10.250.89.2
+Tunnel Flags     : has-lfa entropy-label-capable
+Age              : 02h40m36s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524295               Preference       : 10
+Tunnel Label     : 100006               Tunnel Metric    : 2
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.6/32
+NextHop          : 10.250.89.2
+Tunnel Flags     : entropy-label-capable
+Age              : 02h02m53s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Algorithm        : 129                  
+Tunnel ID        : 524300               Preference       : 10
+Tunnel Label     : 100106               Tunnel Metric    : 100
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.89.2/32 [L]
+NextHop          : 10.250.89.2
+Tunnel Flags     : has-lfa is-adjacency-tunnel
+Age              : 01d06h40m
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524290               Preference       : 10
+Tunnel Label     : 3                    Tunnel Metric    : 0
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.89.6/32 [L]
+NextHop          : 10.250.89.6
+Tunnel Flags     : has-lfa is-adjacency-tunnel
+Age              : 01d06h41m
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524289               Preference       : 10
+Tunnel Label     : 3                    Tunnel Metric    : 0
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Number of tunnel-table entries          : 14
+Number of tunnel-table entries with LFA : 5
+===============================================================================
+tools dump router ospf 0 sr-database
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Segment Routing Database 
+
+===============================================================================
+SID         Label St Type Prefix                                      Stitching
+                      Algo          AdvRtr            Area Flags          FRR
+-------------------------------------------------------------------------------
+1          100001 +R   T1 10.250.88.1/32                                      -
+                         0     10.250.88.1         0.0.0.0 [NnP       ]  T(R)
+2          100002 +R   T1 10.250.88.2/32                                      -
+                         0     10.250.88.2         0.0.0.0 [NnP       ]     -
+3          100003 +R   T1 10.250.88.3/32                                      -
+                         0     10.250.88.3         0.0.0.0 [NnP       ]  T(R)
+4          100004 +R   T1 10.250.88.4/32                                      -
+                         0     10.250.88.4         0.0.0.0 [NnP       ]     -
+5          100005 +R  LT1 10.250.88.5/32                                      -
+                         0     10.250.88.5         0.0.0.0 [NnP       ]     -
+6          100006 +R   T1 10.250.88.6/32                                      -
+                         0     10.250.88.6         0.0.0.0 [NnP       ]  T(R)
+101        100101 +R   T1 10.250.88.1/32                                      -
+                       129     10.250.88.1         0.0.0.0 [NnP       ]     -
+102        100102 +R   T1 10.250.88.2/32                                      -
+                       129     10.250.88.2         0.0.0.0 [NnP       ]     -
+103        100103 +R   T1 10.250.88.3/32                                      -
+                       129     10.250.88.3         0.0.0.0 [NnP       ]     -
+104        100104 +R   T1 10.250.88.4/32                                      -
+                       129     10.250.88.4         0.0.0.0 [NnP       ]     -
+105        100105 +R  LT1 10.250.88.5/32                                      -
+                       129     10.250.88.5         0.0.0.0 [NnP       ]     -
+106        100106 +R   T1 10.250.88.6/32                                      -
+                       129     10.250.88.6         0.0.0.0 [NnP       ]     -
+-------------------------------------------------------------------------------
+No. of Entries: 12
+-------------------------------------------------------------------------------
+St:   R:reported  I:incomplete  W:wrong  N:not reported  F:failed
+      +:SR-ack  -:no route
+Type: L:local  M: mapping Srv  Tx: route type
+FRR:  L:Lfa  R:RLfa  T:TiLfa  (R):Reported  (F):Failed
+      Ln, Rn, Tn: FRR providing node-protection
+===============================================================================
+show router fp-tunnel-table 1 protocol ospf
+
+===============================================================================
+IPv4 Tunnel Table Display
+
+Legend: 
+label stack is ordered from bottom-most to top-most
+B - FRR Backup
+===============================================================================
+Destination                                  Protocol            Tunnel-ID
+  Lbl/SID                                                         
+    NextHop                                                      Intf/Tunnel
+  Lbl/SID (backup)                                               
+    NextHop   (backup)                                           
+-------------------------------------------------------------------------------
+10.250.88.1/32                               SR-OSPF-0            524291
+  100001
+    10.250.89.6                                                   1/1/3:10
+  100001/100002
+    10.250.89.2(B)                                                1/1/1:10
+10.250.88.1/32                               SR-OSPF-0            524296
+  100101
+    10.250.89.2                                                   1/1/1:10
+10.250.88.2/32                               SR-OSPF-0            524292
+  100002
+    10.250.89.6                                                   1/1/3:10
+  100002
+    10.250.89.2                                                   1/1/1:10
+10.250.88.2/32                               SR-OSPF-0            524297
+  100102
+    10.250.89.2                                                   1/1/1:10
+10.250.88.3/32                               SR-OSPF-0            524293
+  100003
+    10.250.89.6                                                   1/1/3:10
+  100003/100002
+    10.250.89.2(B)                                                1/1/1:10
+10.250.88.3/32                               SR-OSPF-0            524298
+  100103
+    10.250.89.2                                                   1/1/1:10
+10.250.88.4/32                               SR-OSPF-0            524294
+  100004
+    10.250.89.6                                                   1/1/3:10
+  100004
+    10.250.89.2                                                   1/1/1:10
+10.250.88.4/32                               SR-OSPF-0            524299
+  100104
+    10.250.89.2                                                   1/1/1:10
+10.250.88.6/32                               SR-OSPF-0            524295
+  100006
+    10.250.89.2                                                   1/1/1:10
+  100006/100002
+    10.250.89.6(B)                                                1/1/3:10
+10.250.88.6/32                               SR-OSPF-0            524300
+  100106
+    10.250.89.2                                                   1/1/1:10
+-------------------------------------------------------------------------------
+Total Entries : 10
+-------------------------------------------------------------------------------
+===============================================================================
+show commands on Router R6-MTC2 at 2023-06-22 20:41:17.922006
+show router flexible-algorithm-definitions
+
+===============================================================================
+Flexible Algorithm Definitions
+===============================================================================
+-------------------------------------------------------------------------------
+Flex-Algo: FlexAgo_delay
+-------------------------------------------------------------------------------
+Admin State   : Up
+Description   : (Not Specified)
+Flags TLV     : Enabled
+Metric Type   : delay
+Priority      : 100
+Exclude       : N.A.
+Include Any   : N.A.
+Include All   : N.A.
+===============================================================================
+show router ospf flex-algo
+
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Flex-Algos 
+===============================================================================
+Flex-Algo Area             Advertising Participating Num      Selected FAD
+                                                     FADs     Owner (Router-Id)
+-------------------------------------------------------------------------------
+129       0.0.0.0          Yes         Yes           6        10.250.88.6
+-------------------------------------------------------------------------------
+FAD: Flexible Algorithm Definition
+-------------------------------------------------------------------------------
+No. of Flex-Algos: 1 (1 unique)
+===============================================================================
+show router ospf flex-algo detail
+
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Flex-Algos (detail)
+===============================================================================
+-------------------------------------------------------------------------------
+Flex-Algo : 129
+-------------------------------------------------------------------------------
+Advertising FAD         : FlexAgo_delay
+Participating           : Yes
+Loop-Free-Alternate     : Disabled
+Oper state
+  Area 0.0.0.0          : UP
+
+Displaying Area 0.0.0.0 FAD Info
+-------------------------------------------------------------------------------
+FADs-count              : 6
+Selected FAD
+  Fad-Owner             : 10.250.88.6
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+Other FADs
+  Fad-Owner             : 10.250.88.1
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+  Fad-Owner             : 10.250.88.2
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+  Fad-Owner             : 10.250.88.3
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+  Fad-Owner             : 10.250.88.4
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+  Fad-Owner             : 10.250.88.5
+    Supported           : Yes
+    Priority            : 100
+    Metric Type         : delay (1)
+    Calculation Type    : spf (0)
+    Exclude             : 0x0
+    Include Any         : 0x0
+    Include All         : 0x0
+    Fad Flags           : M 
+-------------------------------------------------------------------------------
+FAD: Flexible Algorithm Definition
+Fad Flags:   M = Prefix Metric
+===============================================================================
+show router ospf sid-stats node
+
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Sid Statistics
+===============================================================================
+Ingress Label     : 100001              Type              : node
+Prefix            : 10.250.88.1/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100002              Type              : node
+Prefix            : 10.250.88.2/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100003              Type              : node
+Prefix            : 10.250.88.3/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100004              Type              : node
+Prefix            : 10.250.88.4/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100005              Type              : node
+Prefix            : 10.250.88.5/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100006              Type              : node
+Prefix            : 10.250.88.6/32
+Algorithm         : 0                   
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100101              Type              : node
+Prefix            : 10.250.88.1/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100102              Type              : node
+Prefix            : 10.250.88.2/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100103              Type              : node
+Prefix            : 10.250.88.3/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100104              Type              : node
+Prefix            : 10.250.88.4/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100105              Type              : node
+Prefix            : 10.250.88.5/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 100106              Type              : node
+Prefix            : 10.250.88.6/32
+Algorithm         : 129                 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+-------------------------------------------------------------------------------
+Sid count : 12
+===============================================================================
+show router tunnel-table
+
+===============================================================================
+IPv4 Tunnel Table (Router: Base)
+===============================================================================
+Destination           Owner     Encap TunnelId  Pref   Nexthop        Metric
+   Color                                                              
+-------------------------------------------------------------------------------
+10.250.88.1/32        ldp       MPLS  65539     9      10.250.89.1    4
+10.250.88.1/32        ldp       MPLS  65539     9      10.250.89.10   4
+10.250.88.1/32        ospf (0)  MPLS  524291    10     10.250.89.10   4
+10.250.88.1/32        ospf (0)  MPLS  524291    10     10.250.89.1    4
+10.250.88.1/32        ospf (0)  MPLS  524296    10     10.250.89.10   200
+10.250.88.2/32        ldp       MPLS  65538     9      10.250.89.10   2
+10.250.88.2/32 [L]    ospf (0)  MPLS  524292    10     10.250.89.10   2
+10.250.88.2/32        ospf (0)  MPLS  524297    10     10.250.89.10   100
+10.250.88.3/32        ldp       MPLS  65537     9      10.250.89.1    6
+10.250.88.3/32        ldp       MPLS  65537     9      10.250.89.10   6
+10.250.88.3/32        ospf (0)  MPLS  524293    10     10.250.89.10   6
+10.250.88.3/32        ospf (0)  MPLS  524293    10     10.250.89.1    6
+10.250.88.3/32        ospf (0)  MPLS  524298    10     10.250.89.10   300
+10.250.88.4/32        ldp       MPLS  65540     9      10.250.89.10   4
+10.250.88.4/32 [L]    ospf (0)  MPLS  524294    10     10.250.89.10   4
+10.250.88.4/32        ospf (0)  MPLS  524299    10     10.250.89.10   200
+10.250.88.5/32        ldp       MPLS  65541     9      10.250.89.1    2
+10.250.88.5/32 [L]    ospf (0)  MPLS  524295    10     10.250.89.1    2
+10.250.88.5/32        ospf (0)  MPLS  524300    10     10.250.89.1    100
+10.250.89.1/32 [L]    ospf (0)  MPLS  524290    10     10.250.89.1    0
+10.250.89.10/32 [L]   ospf (0)  MPLS  524289    10     10.250.89.10   0
+-------------------------------------------------------------------------------
+Flags: B = BGP or MPLS backup hop available
+       L = Loop-Free Alternate (LFA) hop available
+       E = Inactive best-external BGP route
+       k = RIB-API or Forwarding Policy backup hop
+===============================================================================
+show router tunnel-table protocol ospf detail
+
+===============================================================================
+Tunnel Table (Router: Base)
+===============================================================================
+Destination      : 10.250.88.1/32
+NextHop          : 10.250.89.10
+Tunnel Flags     : entropy-label-capable
+Age              : 02h41m10s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524291               Preference       : 10
+Tunnel Label     : 100001               Tunnel Metric    : 4
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.1/32
+NextHop          : 10.250.89.1
+Tunnel Flags     : entropy-label-capable
+Age              : 02h41m10s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524291               Preference       : 10
+Tunnel Label     : 100001               Tunnel Metric    : 4
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.1/32
+NextHop          : 10.250.89.10
+Tunnel Flags     : entropy-label-capable
+Age              : 02h02m30s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Algorithm        : 129                  
+Tunnel ID        : 524296               Preference       : 10
+Tunnel Label     : 100101               Tunnel Metric    : 200
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.2/32 [L]
+NextHop          : 10.250.89.10
+Tunnel Flags     : has-lfa entropy-label-capable
+Age              : 02h41m05s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524292               Preference       : 10
+Tunnel Label     : 100002               Tunnel Metric    : 2
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.2/32
+NextHop          : 10.250.89.10
+Tunnel Flags     : entropy-label-capable
+Age              : 02h02m30s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Algorithm        : 129                  
+Tunnel ID        : 524297               Preference       : 10
+Tunnel Label     : 100102               Tunnel Metric    : 100
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.3/32
+NextHop          : 10.250.89.10
+Tunnel Flags     : entropy-label-capable
+Age              : 02h41m00s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524293               Preference       : 10
+Tunnel Label     : 100003               Tunnel Metric    : 6
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.3/32
+NextHop          : 10.250.89.1
+Tunnel Flags     : entropy-label-capable
+Age              : 02h41m00s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524293               Preference       : 10
+Tunnel Label     : 100003               Tunnel Metric    : 6
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.3/32
+NextHop          : 10.250.89.10
+Tunnel Flags     : entropy-label-capable
+Age              : 02h02m30s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Algorithm        : 129                  
+Tunnel ID        : 524298               Preference       : 10
+Tunnel Label     : 100103               Tunnel Metric    : 300
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.4/32 [L]
+NextHop          : 10.250.89.10
+Tunnel Flags     : has-lfa entropy-label-capable
+Age              : 02h40m53s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524294               Preference       : 10
+Tunnel Label     : 100004               Tunnel Metric    : 4
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.4/32
+NextHop          : 10.250.89.10
+Tunnel Flags     : entropy-label-capable
+Age              : 02h02m30s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Algorithm        : 129                  
+Tunnel ID        : 524299               Preference       : 10
+Tunnel Label     : 100104               Tunnel Metric    : 200
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.5/32 [L]
+NextHop          : 10.250.89.1
+Tunnel Flags     : has-lfa entropy-label-capable
+Age              : 02h40m48s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524295               Preference       : 10
+Tunnel Label     : 100005               Tunnel Metric    : 2
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.88.5/32
+NextHop          : 10.250.89.1
+Tunnel Flags     : entropy-label-capable
+Age              : 02h02m19s
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Algorithm        : 129                  
+Tunnel ID        : 524300               Preference       : 10
+Tunnel Label     : 100105               Tunnel Metric    : 100
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.89.1/32 [L]
+NextHop          : 10.250.89.1
+Tunnel Flags     : has-lfa is-adjacency-tunnel
+Age              : 01d06h41m
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524290               Preference       : 10
+Tunnel Label     : 3                    Tunnel Metric    : 0
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Destination      : 10.250.89.10/32 [L]
+NextHop          : 10.250.89.10
+Tunnel Flags     : has-lfa is-adjacency-tunnel
+Age              : 01d06h41m
+CBF Classes      : (Not Specified)
+Owner            : ospf (0)             Encap            : MPLS
+Tunnel ID        : 524289               Preference       : 10
+Tunnel Label     : 3                    Tunnel Metric    : 0
+Tunnel MTU       : 9182                 Max Label Stack  : 3
+-------------------------------------------------------------------------------
+Number of tunnel-table entries          : 14
+Number of tunnel-table entries with LFA : 5
+===============================================================================
+tools dump router ospf 0 sr-database
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Segment Routing Database 
+
+===============================================================================
+SID         Label St Type Prefix                                      Stitching
+                      Algo          AdvRtr            Area Flags          FRR
+-------------------------------------------------------------------------------
+1          100001 +R   T1 10.250.88.1/32                                      -
+                         0     10.250.88.1         0.0.0.0 [NnP       ]     -
+2          100002 +R   T1 10.250.88.2/32                                      -
+                         0     10.250.88.2         0.0.0.0 [NnP       ]  T(R)
+3          100003 +R   T1 10.250.88.3/32                                      -
+                         0     10.250.88.3         0.0.0.0 [NnP       ]     -
+4          100004 +R   T1 10.250.88.4/32                                      -
+                         0     10.250.88.4         0.0.0.0 [NnP       ]  T(R)
+5          100005 +R   T1 10.250.88.5/32                                      -
+                         0     10.250.88.5         0.0.0.0 [NnP       ]  T(R)
+6          100006 +R  LT1 10.250.88.6/32                                      -
+                         0     10.250.88.6         0.0.0.0 [NnP       ]     -
+101        100101 +R   T1 10.250.88.1/32                                      -
+                       129     10.250.88.1         0.0.0.0 [NnP       ]     -
+102        100102 +R   T1 10.250.88.2/32                                      -
+                       129     10.250.88.2         0.0.0.0 [NnP       ]     -
+103        100103 +R   T1 10.250.88.3/32                                      -
+                       129     10.250.88.3         0.0.0.0 [NnP       ]     -
+104        100104 +R   T1 10.250.88.4/32                                      -
+                       129     10.250.88.4         0.0.0.0 [NnP       ]     -
+105        100105 +R   T1 10.250.88.5/32                                      -
+                       129     10.250.88.5         0.0.0.0 [NnP       ]     -
+106        100106 +R  LT1 10.250.88.6/32                                      -
+                       129     10.250.88.6         0.0.0.0 [NnP       ]     -
+-------------------------------------------------------------------------------
+No. of Entries: 12
+-------------------------------------------------------------------------------
+St:   R:reported  I:incomplete  W:wrong  N:not reported  F:failed
+      +:SR-ack  -:no route
+Type: L:local  M: mapping Srv  Tx: route type
+FRR:  L:Lfa  R:RLfa  T:TiLfa  (R):Reported  (F):Failed
+      Ln, Rn, Tn: FRR providing node-protection
+===============================================================================
+show router fp-tunnel-table 1 protocol ospf
+
+===============================================================================
+IPv4 Tunnel Table Display
+
+Legend: 
+label stack is ordered from bottom-most to top-most
+B - FRR Backup
+===============================================================================
+Destination                                  Protocol            Tunnel-ID
+  Lbl/SID                                                         
+    NextHop                                                      Intf/Tunnel
+  Lbl/SID (backup)                                               
+    NextHop   (backup)                                           
+-------------------------------------------------------------------------------
+10.250.88.1/32                               SR-OSPF-0            524291
+  100001
+    10.250.89.10                                                  1/1/3:10
+  100001
+    10.250.89.1                                                   1/1/1:10
+10.250.88.1/32                               SR-OSPF-0            524296
+  100101
+    10.250.89.10                                                  1/1/3:10
+10.250.88.2/32                               SR-OSPF-0            524292
+  100002
+    10.250.89.10                                                  1/1/3:10
+  100002/100001
+    10.250.89.1(B)                                                1/1/1:10
+10.250.88.2/32                               SR-OSPF-0            524297
+  100102
+    10.250.89.10                                                  1/1/3:10
+10.250.88.3/32                               SR-OSPF-0            524293
+  100003
+    10.250.89.10                                                  1/1/3:10
+  100003
+    10.250.89.1                                                   1/1/1:10
+10.250.88.3/32                               SR-OSPF-0            524298
+  100103
+    10.250.89.10                                                  1/1/3:10
+10.250.88.4/32                               SR-OSPF-0            524294
+  100004
+    10.250.89.10                                                  1/1/3:10
+  100004/100001
+    10.250.89.1(B)                                                1/1/1:10
+10.250.88.4/32                               SR-OSPF-0            524299
+  100104
+    10.250.89.10                                                  1/1/3:10
+10.250.88.5/32                               SR-OSPF-0            524295
+  100005
+    10.250.89.1                                                   1/1/1:10
+  100005/100001
+    10.250.89.10(B)                                               1/1/3:10
+10.250.88.5/32                               SR-OSPF-0            524300
+  100105
+    10.250.89.1                                                   1/1/1:10
+-------------------------------------------------------------------------------
+Total Entries : 10
+-------------------------------------------------------------------------------
+===============================================================================

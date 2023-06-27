@@ -1,0 +1,8 @@
+show router flexible-algorithm-definitions 
+show router ospf flex-algo 
+show router ospf flex-algo detail 
+show router ospf sid-stats node
+show router tunnel-table
+show router tunnel-table protocol ospf detail 
+tools dump router ospf 0 sr-database
+show router fp-tunnel-table 1 protocol ospf

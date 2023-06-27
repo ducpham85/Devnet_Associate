@@ -4,45 +4,38 @@ from pysros.exceptions import *
 from datetime import datetime
 import sys
 import json
-
-def ssh_and_get(ip,username,password,port,command=[]):
-    device={
-        "device_type":"nokia_sros",
-        "ip":ip,
-        "username":username,
-        "password":password,
-        "port":port
-    }
+import time
+def ssh_and_get(device_info={},command=[]):
+    device=device_info
     try:
     #6. Connect to device
         CON=ConnectHandler(**device)
         info=""
         for i in command:
-            info += i + '\n' + CON.send_command(i) + '\n'
+            output=CON.send_command(i) 
+            time.sleep(1)
+            info+=i + '\n' + output + '\n'
+            #time.sleep(1)
+            # info.append(output)
     #8.Disconnect the session
+        time.sleep(1)
         CON.disconnect()
         with open('logs.txt','a') as file:
-            file.write(f'{ip} port {port} {datetime.now()} SSH Connection OK' + '\n')
+            file.write(f'{device["ip"]} port {device["port"]} {datetime.now()} SSH Connection OK' + '\n')
         #print(info)
         return info
     except NetmikoTimeoutException:
-        error = f'{ip} port {port} {datetime.now()} SSH Connection Timeout. Please check the hostname, IP, TCP port, firewall, and device availability.'
+        error = f'{device["ip"]} port {device["port"]} {datetime.now()} SSH Connection Timeout. Please check the hostname, IP, TCP port, firewall, and device availability.'
         with open('logs.txt','a') as file:
             file.write(error + '\n')
         return ""
     except NetmikoAuthenticationException:
-        error = f'{ip} port {port} {datetime.now()} SSH Authentication to device failed. Check correct usename/password.'
+        error = f'{device["ip"]} port {device["port"]} {datetime.now()} SSH Authentication to device failed. Check correct usename/password.'
         with open('logs.txt','a') as file:    
             file.write(error + '\n')
         return ""
-def ssh_and_config(ip,username,password,port,command=[]):
-    device={
-        "device_type":"nokia_sros",
-        "ip":ip,
-        "username":username,
-        "password":password,
-        "port":port
-    }
+def ssh_and_config(device_info={},command=[]):
+    device=device_info
     try:
     #6. Connect to device
         CON=ConnectHandler(**device)
@@ -50,16 +43,16 @@ def ssh_and_config(ip,username,password,port,command=[]):
     #8.Disconnect the session
         CON.disconnect()
         with open('logs.txt','a') as file:
-            file.write(f'{ip} port {port} {datetime.now()} SSH Connection OK' + '\n')
+            file.write(f'{device["ip"]} port {device["port"]} {datetime.now()} SSH Connection OK' + '\n')
         #print(info)
         return info
     except NetmikoTimeoutException:
-        error = f'{ip} port {port} {datetime.now()} SSH Connection Timeout. Please check the hostname, IP, TCP port, firewall, and device availability.'
+        error = f'{device["ip"]} port {device["port"]} {datetime.now()} SSH Connection Timeout. Please check the hostname, IP, TCP port, firewall, and device availability.'
         with open('logs.txt','a') as file:
             file.write(error + '\n')
         return ""
     except NetmikoAuthenticationException:
-        error = f'{ip} port {port} {datetime.now()} SSH Authentication to device failed. Check correct usename/password.'
+        error = f'{device["ip"]} port {device["port"]} {datetime.now()} SSH Authentication to device failed. Check correct usename/password.'
         with open('logs.txt','a') as file:    
             file.write(error + '\n')
         return ""
@@ -80,15 +73,29 @@ def api_get(ip,username,password,port,api_url):
         return pysros_ds
     except RuntimeError as error1:
         print("Failed to connect.  Error1:", error1)
+        return []
     except ModelProcessingError as error2:
         print("Failed to create model-driven schema.  Error:", error2)
+        return []
     except Exception as error3:  # pylint: disable=broad-except
         print("Failed to connect.  Error:", error3)
+        return []
 
-    
+# if __name__ == "__main__":
+#     #Declare a divice information to conntect to 
+#     device_info={
+#         "device_type":"nokia_sros",
+#         "ip":"10.18.8.142",
+#         "username":"admin",
+#         "password":"admin",
+#         "port":"9027"
+#     }
+#     command=["/show port"]
+#     output=ssh_and_get(device_info,command)
+#     print(output)
 # show_command=['/show router interface "system"','/show port']
 # print(ssh_and_get("10.18.8.143","admin","admin",9027,show_command))
 # config_command=["/configure router interface python_test","address 192.168.1.100/32","loopback"]
-# print(ssh_and_config("10.18.8.143","admin","admin",9027,config_command))
-url=["/nokia-conf:configure/router",'/nokia-state:state/port[port-id="1/1/1"]']
-print(api_get("10.18.8.143","admin","admin",830,url)[0])
+#print(ssh_and_config("10.84.1.166","admin","admin",830,config_command))
+# url=["/nokia-conf:configure/router",'/nokia-state:state/port[port-id="1/1/1"]']
+# print(api_get("10.84.1.166","admin","admin",830,url))

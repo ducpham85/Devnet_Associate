@@ -1,0 +1,14 @@
+/configure router ospf 
+             traffic-engineering
+             timers
+                 lsa-arrival 2
+                 lsa-generate 10 lsa-initial-wait 10 lsa-second-wait 10
+                 spf-wait 10 spf-initial-wait 10 spf-second-wait 10
+             exit
+no shutdown
+/configure router mpls-labels sr-labels start 100000 end 100999
+/configure router ospf segment-routing prefix-sid-range global
+/configure router ospf advertise-router-capability area
+/configure router ospf segment-routing no shutdown
+/configure router ospf loopfree-alternates ti-lfa no node-protect
+/configure router ospf area 0

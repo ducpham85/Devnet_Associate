@@ -1,0 +1,153 @@
+show commands on Router R1-AGG1 at 2023-06-22 23:16:13.953071
+show router ospf sid-stats adj
+
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Sid Statistics
+===============================================================================
+Ingress Label     : 524285              Type              : adjacency
+Prefix            : 10.250.89.5/32
+Interface         : to-R5-MTC1:10       
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 524286              Type              : adjacency
+Prefix            : 10.250.94.18/32
+Interface         : to-R3-CSG1:903      
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 524287              Type              : adjacency
+Prefix            : 10.250.89.14/32
+Interface         : to-R2-AGG2:10       
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+-------------------------------------------------------------------------------
+Sid count : 3
+===============================================================================
+R1-AGG1:{'to-R5-MTC1': '524285', 'to-R3-CSG1': '524286', 'to-R2-AGG2': '524287'}show commands on Router R2-AGG2 at 2023-06-22 23:16:16.995797
+show router ospf sid-stats adj
+
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Sid Statistics
+===============================================================================
+Ingress Label     : 524285              Type              : adjacency
+Prefix            : 10.250.94.21/32
+Interface         : to-R4-CSG2:903      
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 524286              Type              : adjacency
+Prefix            : 10.250.89.9/32
+Interface         : to-R6-MTC2:10       
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 524287              Type              : adjacency
+Prefix            : 10.250.89.13/32
+Interface         : to-R1-AGG1:10       
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+-------------------------------------------------------------------------------
+Sid count : 3
+===============================================================================
+R2-AGG2:{'to-R4-CSG2': '524285', 'to-R6-MTC2': '524286', 'to-R1-AGG1': '524287'}show commands on Router R3-CSG1 at 2023-06-22 23:16:19.982545
+show router ospf sid-stats adj
+
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Sid Statistics
+===============================================================================
+Ingress Label     : 524286              Type              : adjacency
+Prefix            : 10.250.89.26/32
+Interface         : to-R4-CSG2:10       
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 524287              Type              : adjacency
+Prefix            : 10.250.94.17/32
+Interface         : to-R1-AGG1:903      
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+-------------------------------------------------------------------------------
+Sid count : 2
+===============================================================================
+R3-CSG1:{'to-R4-CSG2': '524286', 'to-R1-AGG1': '524287'}show commands on Router R4-CSG2 at 2023-06-22 23:16:23.006401
+show router ospf sid-stats adj
+
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Sid Statistics
+===============================================================================
+Ingress Label     : 524286              Type              : adjacency
+Prefix            : 10.250.94.22/32
+Interface         : to-R2-AGG2:903      
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 524287              Type              : adjacency
+Prefix            : 10.250.89.25/32
+Interface         : to-R3-CSG1:10       
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+-------------------------------------------------------------------------------
+Sid count : 2
+===============================================================================
+R4-CSG2:{'to-R2-AGG2': '524286', 'to-R3-CSG1': '524287'}show commands on Router R5-MTC1 at 2023-06-22 23:16:28.086672
+show router ospf sid-stats adj
+
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Sid Statistics
+===============================================================================
+Ingress Label     : 524286              Type              : adjacency
+Prefix            : 10.250.89.2/32
+Interface         : to-R6-MTC2:10       
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 524287              Type              : adjacency
+Prefix            : 10.250.89.6/32
+Interface         : to-R1-AGG1:10       
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+-------------------------------------------------------------------------------
+Sid count : 2
+===============================================================================
+R5-MTC1:{'to-R6-MTC2': '524286', 'to-R1-AGG1': '524287'}show commands on Router R6-MTC2 at 2023-06-22 23:16:31.043516
+show router ospf sid-stats adj
+
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Sid Statistics
+===============================================================================
+Ingress Label     : 524286              Type              : adjacency
+Prefix            : 10.250.89.1/32
+Interface         : to-R5-MTC1:10       
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 524287              Type              : adjacency
+Prefix            : 10.250.89.10/32
+Interface         : to-R2-AGG2:10       
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+-------------------------------------------------------------------------------
+Sid count : 2
+===============================================================================
+R6-MTC2:{'to-R5-MTC1': '524286', 'to-R2-AGG2': '524287'}

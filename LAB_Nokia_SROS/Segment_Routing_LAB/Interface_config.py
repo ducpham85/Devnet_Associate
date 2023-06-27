@@ -6,6 +6,7 @@ import re
 
 if __name__ == "__main__":
     df = pd.read_excel('router_info.xlsx')
+    df1=pd.read_excel('interface_config.xlsx')
     command=[]
     # with open('Basic_command.txt','r') as file:
     #     for line in file:
@@ -27,12 +28,18 @@ if __name__ == "__main__":
             "password":password,
             "port":port
         }
-        # command.append('admin save')
-        # command.append(f'/configure router interface system address {sys_ip1}/32')
-        # command.append(f'/configure system name {hostname}')
-        # command=['admin save']
-        # print(command)
+        for id,r in df1.iterrows():
+            if r['Node Name_N']==hostname:
+                command +=r['Near end interface config'].splitlines()
+                # command.append(r['Near end interface config'].splitlines())
+            elif r['Node Name_F']==hostname:
+                command +=r['Far end interface config'].splitlines()
+                # command.append(r['Far end interface config'].splitlines())
+            else:
+                pass
+
+        print(command)
         output=ssh_and_config(device,command)
         print(output)
-        # command=[]
+        command=[]
     

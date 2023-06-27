@@ -1,0 +1,6 @@
+/configure router mpls path "dyn" no shutdown 
+/configure router mpls lsp {lsp_name} sr-te to {far_end_system_ip} 
+/configure router mpls lsp {lsp_name} path-computation-method local-cspf 
+/configure router mpls lsp {lsp_name} primary "dyn" no shutdown 
+/configure router mpls lsp {lsp_name} max-sr-labels 8 additional-frr-labels 2
+/configure router mpls lsp {lsp_name} no shutdown

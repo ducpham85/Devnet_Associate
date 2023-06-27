@@ -13,12 +13,10 @@ def ssh_and_get(device_info={},command=[]):
         info=""
         for i in command:
             output=CON.send_command(i) 
-            time.sleep(1)
             info+=i + '\n' + output + '\n'
             #time.sleep(1)
             # info.append(output)
     #8.Disconnect the session
-        time.sleep(1)
         CON.disconnect()
         with open('logs.txt','a') as file:
             file.write(f'{device["ip"]} port {device["port"]} {datetime.now()} SSH Connection OK' + '\n')
@@ -81,18 +79,24 @@ def api_get(ip,username,password,port,api_url):
         print("Failed to connect.  Error:", error3)
         return []
 
+    
+    
+    
 # if __name__ == "__main__":
 #     #Declare a divice information to conntect to 
 #     device_info={
 #         "device_type":"nokia_sros",
-#         "ip":"10.18.8.142",
+#         "ip":"10.18.8.143",
 #         "username":"admin",
 #         "password":"admin",
 #         "port":"9027"
 #     }
-#     command=["/show port"]
+#     command=['show router interface detail | match "If Name          :"']
+#     list_interface=[]
 #     output=ssh_and_get(device_info,command)
-#     print(output)
+#     for i in output.splitlines()[1:]:
+#         list_interface.append(i.split(':')[1].strip())
+#     print(list_interface)
 # show_command=['/show router interface "system"','/show port']
 # print(ssh_and_get("10.18.8.143","admin","admin",9027,show_command))
 # config_command=["/configure router interface python_test","address 192.168.1.100/32","loopback"]

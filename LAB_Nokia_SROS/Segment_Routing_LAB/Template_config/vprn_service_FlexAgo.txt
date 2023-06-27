@@ -1,0 +1,15 @@
+/configure router policy-options begin
+/configure router policy-options community target:65333:{vprn_id} members target:65333:{vprn_id}
+/configure router policy-options policy-statement flex-algo-vprn5-import entry 10 from community "target:65333:{vprn_id}"
+/configure router policy-options policy-statement flex-algo-vprn5-import entry 10 action accept flex-algo 129
+/configure router policy-options policy-statement flex-algo-vprn5-import default-action reject
+/configure router policy-options policy-statement vprn5-export default-action accept community add "target:65333:{vprn_id}"
+/configure router policy-options commit
+/configure service vprn {vprn_id} customer 1 create route-distinguisher {sys_ip}:{vprn_id}
+/configure service vprn {vprn_id} vrf-import flex-algo-vprn5-import
+/configure service vprn {vprn_id} vrf-export vprn5-export
+/configure service vprn {vprn_id} interface lo1 create address {vprn_id}.{vprn_id}.{vprn_id}.{node_id}/32
+/configure service vprn {vprn_id} interface lo1 loopback
+/configure service vprn {vprn_id} auto-bind-tunnel resolution filter
+/configure service vprn {vprn_id} auto-bind-tunnel resolution-filter sr-ospf
+/configure service vprn {vprn_id} no shutdown

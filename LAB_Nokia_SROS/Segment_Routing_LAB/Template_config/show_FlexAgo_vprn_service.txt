@@ -1,0 +1,8 @@
+show service id 5 base
+show router policy "flex-algo-vprn5-import" 
+show router policy "vprn5-export"
+show router tunnel-table protocol ospf
+show router tunnel-table protocol ospf detail 
+show router bgp routes vpn-ipv4
+show router 5 route-table 
+show router 5 route-table  extensive

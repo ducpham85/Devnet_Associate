@@ -1,0 +1,7 @@
+/configure router flexible-algorithm-definitions flex-algo {FlexAgo_name} create metric-type delay 
+/configure router flexible-algorithm-definitions flex-algo {FlexAgo_name} create no shutdown 
+/configure router ospf flexible-algorithms flex-algo {flexago_id} participate 
+/configure router ospf flexible-algorithms flex-algo {flexago_id} advertise {FlexAgo_name} 
+/configure router ospf flexible-algorithms no shutdown
+/configure router ospf area 0 interface "system" flex-algo {flexago_id} node-sid index {FlexAgo_Node_id}
+/configure router ospf flexible-algorithms flex-algo {flexago_id} loopfree-alternates
