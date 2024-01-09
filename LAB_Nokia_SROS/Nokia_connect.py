@@ -1,4 +1,4 @@
-from netmiko import *
+from netmiko import ConnectHandler, NetmikoTimeoutException, NetmikoAuthenticationException
 from pysros.management import connect
 from pysros.exceptions import *
 from datetime import datetime
