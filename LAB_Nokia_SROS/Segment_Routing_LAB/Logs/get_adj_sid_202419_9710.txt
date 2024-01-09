@@ -1,0 +1,178 @@
+show commands on Router R1-AGG1 at 2024-01-09 09:07:10.452106
+show router ospf sid-stats adj
+
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Sid Statistics
+===============================================================================
+Ingress Label     : 524278              Type              : adjacency
+Prefix            : 10.250.12.2/32
+Interface         : to_AGG-DNGTKE21_DN* 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 524281              Type              : adjacency
+Prefix            : 10.250.12.2/32
+Interface         : to_AGG-DNGTKE21_DN* 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 524282              Type              : adjacency
+Prefix            : 10.250.15.5/32
+Interface         : to_MTC-DNGSTA11_DN* 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 524285              Type              : adjacency
+Prefix            : 10.250.13.3/32
+Interface         : to_R3_CSG_DNCL15    
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+-------------------------------------------------------------------------------
+Sid count : 4
+===============================================================================
+* indicates that the corresponding row element may have been truncated.
+R1-AGG1:{'to_AGG-DNGTKE21_DN*': '524281', 'to_MTC-DNGSTA11_DN*': '524282', 'to_R3_CSG_DNCL15': '524285'}
+show commands on Router R2-AGG2 at 2024-01-09 09:07:13.741409
+show router ospf sid-stats adj
+
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Sid Statistics
+===============================================================================
+Ingress Label     : 524279              Type              : adjacency
+Prefix            : 10.250.26.6/32
+Interface         : to_R6_MTC-DNGCLE11* 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 524284              Type              : adjacency
+Prefix            : 10.250.24.4/32
+Interface         : to_R4_CSG_DNTK02    
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 524285              Type              : adjacency
+Prefix            : 10.250.12.1/32
+Interface         : to-AGG-DNGCLE11_DN* 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 524286              Type              : adjacency
+Prefix            : 10.250.12.1/32
+Interface         : to-AGG-DNGCLE11_DN* 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+-------------------------------------------------------------------------------
+Sid count : 4
+===============================================================================
+* indicates that the corresponding row element may have been truncated.
+R2-AGG2:{'to_R6_MTC-DNGCLE11*': '524279', 'to_R4_CSG_DNTK02': '524284', 'to-AGG-DNGCLE11_DN*': '524286'}
+show commands on Router R3-CSG1 at 2024-01-09 09:07:17.174887
+show router ospf sid-stats adj
+
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Sid Statistics
+===============================================================================
+Ingress Label     : 524284              Type              : adjacency
+Prefix            : 10.250.13.1/32
+Interface         : to_R1_AGG-DNGCLE11* 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 524285              Type              : adjacency
+Prefix            : 10.250.34.4/32
+Interface         : to_R4_CSG_DNTK02    
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+-------------------------------------------------------------------------------
+Sid count : 2
+===============================================================================
+* indicates that the corresponding row element may have been truncated.
+R3-CSG1:{'to_R1_AGG-DNGCLE11*': '524284', 'to_R4_CSG_DNTK02': '524285'}
+show commands on Router R4-CSG2 at 2024-01-09 09:07:20.668859
+show router ospf sid-stats adj
+
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Sid Statistics
+===============================================================================
+Ingress Label     : 524285              Type              : adjacency
+Prefix            : 10.250.34.3/32
+Interface         : to_R3_CSG_DNCL15    
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 524286              Type              : adjacency
+Prefix            : 10.250.24.2/32
+Interface         : to_R2_AGG-DNGTKE21* 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+-------------------------------------------------------------------------------
+Sid count : 2
+===============================================================================
+* indicates that the corresponding row element may have been truncated.
+R4-CSG2:{'to_R3_CSG_DNCL15': '524285', 'to_R2_AGG-DNGTKE21*': '524286'}
+show commands on Router R5-MTC1 at 2024-01-09 09:07:23.768498
+show router ospf sid-stats adj
+
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Sid Statistics
+===============================================================================
+Ingress Label     : 524284              Type              : adjacency
+Prefix            : 10.250.56.6/32
+Interface         : to-MTC-DNGCLE11_DN* 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 524286              Type              : adjacency
+Prefix            : 10.250.15.1/32
+Interface         : to_R1_AGG-DNGCLE11* 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+-------------------------------------------------------------------------------
+Sid count : 2
+===============================================================================
+* indicates that the corresponding row element may have been truncated.
+R5-MTC1:{'to-MTC-DNGCLE11_DN*': '524284', 'to_R1_AGG-DNGCLE11*': '524286'}
+show commands on Router R6-MTC2 at 2024-01-09 09:07:26.916159
+show router ospf sid-stats adj
+
+===============================================================================
+Rtr Base OSPFv2 Instance 0 Sid Statistics
+===============================================================================
+Ingress Label     : 524281              Type              : adjacency
+Prefix            : 10.250.56.5/32
+Interface         : to_MTC-DNGSTA11_DN* 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+Ingress Label     : 524286              Type              : adjacency
+Prefix            : 10.250.26.2/32
+Interface         : to_R2_AGG-DNGTKE21* 
+Ingress Oper State: disabled            Egress Oper State : disabled
+Ingress Octets    : 0                   Egress Octets     : 0
+Ingress Packets   : 0                   Egress Packets    : 0
+ 
+-------------------------------------------------------------------------------
+Sid count : 2
+===============================================================================
+* indicates that the corresponding row element may have been truncated.
+R6-MTC2:{'to_MTC-DNGSTA11_DN*': '524281', 'to_R2_AGG-DNGTKE21*': '524286'}
